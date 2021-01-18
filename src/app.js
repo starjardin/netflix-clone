@@ -6,10 +6,10 @@ export function App() {
   return (
     <Router>
         <Switch>
-            <Route path="/browse">
+            <Route path="/signin">
                 <p>I will be the sign in page</p>
             </Route>
-            <Route path="/signin">
+            <Route path="/signup">
                 <p>I will be the sign up page</p>
             </Route>
             <Route path="/browse">
