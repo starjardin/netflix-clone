@@ -5,7 +5,7 @@ import { GlobalStyles } from './global-styles';
 
 ReactDOM.render(
   <>
-    {/* <GlobalStyles/> */}
+    <GlobalStyles/>
     <App />
   </>
   , document.getElementById('root')

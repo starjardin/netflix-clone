@@ -36821,14 +36821,24 @@ Footer.Break = function FooterBreak() {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Item = exports.Inner = exports.Body = exports.Header = exports.Title = exports.Container = void 0;
+exports.Frame = exports.Body = exports.Header = exports.Title = exports.Item = exports.Inner = exports.Container = void 0;
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _templateObject7() {
+  var data = _taggedTemplateLiteral(["\n  margin-bottom : 1px;\n"]);
+
+  _templateObject7 = function _templateObject7() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject6() {
-  var data = _taggedTemplateLiteral([""]);
+  var data = _taggedTemplateLiteral(["\n  max-width : 1200px;\n  font-weight : normal;\n  transition : max-height .25s cubic-bezier(0.5, 0, 0.1, 1);\n  cursor : pointer;\n  margin-bottom : 1px;\n  background-color : #303030;\n  use-select : none;\n  align-items : center;\n  padding : 0.8em 1.2em;\n\n  @media (max-width : 600px) {\n    font-size : 16px;\n    line-height : 22px;\n  }\n"]);
 
   _templateObject6 = function _templateObject6() {
     return data;
@@ -36838,7 +36848,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = _taggedTemplateLiteral([""]);
+  var data = _taggedTemplateLiteral(["\n  display : flex;\n  justify-content : space-between;\n  cursor : pointer;\n  margin-bottom : 1px;\n  font-weight : normal;\n  font-size : 26px;\n  background-color : #303030;\n  user-select : none;\n  align-items : center;\n  padding : 0.8em 1.2em;\n\n  @media (max-width : 600px) {\n    font-size : 16px;\n  }\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -36848,7 +36858,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = _taggedTemplateLiteral([""]);
+  var data = _taggedTemplateLiteral(["\n  font-size : 50px;\n  line-height : 1.1;\n  margin-top : 0;\n  margin-bottom : 8px;\n  color : #fff;\n  text-align : center;\n\n  @media (max-width : 600px) {\n    font-size : 35px;\n  }\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -36858,7 +36868,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = _taggedTemplateLiteral([""]);
+  var data = _taggedTemplateLiteral(["\n  color : #fff;\n  margin-bottom : 10px;\n  &:first-of-type {\n    margin-top : 3em;\n  }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -36868,7 +36878,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral([""]);
+  var data = _taggedTemplateLiteral(["\n  display : flex;\n  flex-direction : column;\n  padding : 70px 45px;\n  max-width : 815px;\n  margin : auto;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -36878,7 +36888,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral([""]);
+  var data = _taggedTemplateLiteral(["\n  display : flex;\n  border-bottom : 8px solid #222;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -36893,25 +36903,29 @@ var Container = _styledComponents.default.div(_templateObject());
 
 exports.Container = Container;
 
-var Title = _styledComponents.default.div(_templateObject2());
-
-exports.Title = Title;
-
-var Header = _styledComponents.default.div(_templateObject3());
-
-exports.Header = Header;
-
-var Body = _styledComponents.default.div(_templateObject4());
-
-exports.Body = Body;
-
-var Inner = _styledComponents.default.div(_templateObject5());
+var Inner = _styledComponents.default.div(_templateObject2());
 
 exports.Inner = Inner;
 
-var Item = _styledComponents.default.div(_templateObject6());
+var Item = _styledComponents.default.div(_templateObject3());
 
 exports.Item = Item;
+
+var Title = _styledComponents.default.div(_templateObject4());
+
+exports.Title = Title;
+
+var Header = _styledComponents.default.div(_templateObject5());
+
+exports.Header = Header;
+
+var Body = _styledComponents.default.div(_templateObject6());
+
+exports.Body = Body;
+
+var Frame = _styledComponents.default.div(_templateObject7());
+
+exports.Frame = Frame;
 },{"styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"src/components/accordion/index.js":[function(require,module,exports) {
 "use strict";
 
@@ -36928,9 +36942,25 @@ function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return 
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+var ToggleContext = (0, _react.createContext)();
 
 function Accordion(_ref) {
   var children = _ref.children,
@@ -36943,7 +36973,17 @@ Accordion.Item = function AccordionItem(_ref2) {
   var children = _ref2.children,
       restProps = _objectWithoutProperties(_ref2, ["children"]);
 
-  return /*#__PURE__*/_react.default.createElement(_accordion.Item, restProps, children);
+  var _useState = (0, _react.useState)(false),
+      _useState2 = _slicedToArray(_useState, 2),
+      toggleShow = _useState2[0],
+      setToggleShow = _useState2[1];
+
+  return /*#__PURE__*/_react.default.createElement(ToggleContext.Provider, {
+    value: {
+      toggleShow: toggleShow,
+      setToggleShow: setToggleShow
+    }
+  }, /*#__PURE__*/_react.default.createElement(_accordion.Item, restProps, children));
 };
 
 Accordion.Title = function AccordionTitle(_ref3) {
@@ -36964,7 +37004,21 @@ Accordion.Header = function AccordionHeader(_ref5) {
   var children = _ref5.children,
       restProps = _objectWithoutProperties(_ref5, ["children"]);
 
-  return /*#__PURE__*/_react.default.createElement(_accordion.Header, restProps, children);
+  var _useContext = (0, _react.useContext)(ToggleContext),
+      toggleShow = _useContext.toggleShow,
+      setToggleShow = _useContext.setToggleShow;
+
+  return /*#__PURE__*/_react.default.createElement(_accordion.Header, _extends({
+    onClick: function onClick() {
+      return setToggleShow(!toggleShow);
+    }
+  }, restProps), children, toggleShow ? /*#__PURE__*/_react.default.createElement("img", {
+    src: "/images/icons/close-slim.png",
+    alt: "close"
+  }) : /*#__PURE__*/_react.default.createElement("img", {
+    src: "/images/icons/add.png",
+    alt: "open"
+  }));
 };
 
 Accordion.Body = function AccordionBody(_ref6) {
@@ -37201,19 +37255,30 @@ function App() {
   }, /*#__PURE__*/_react.default.createElement(_Home.default, null))));
 }
 },{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","./pages/Home":"src/pages/Home.js"}],"src/global-styles.js":[function(require,module,exports) {
-// import { creatGlobalStyle } from 'styled-components'
-// export const GlobalStyles = creatGlobalStyle`
-//   html, body {
-//     font-family : 'Helvetica Neue', Helvetica, sans-serif;
-//     -webkit-font-smoothing : antialiased;
-//     -moz-osx-font-smoothing : antialiased;
-//     backgorund-color : #000000;
-//     color : #333333;
-//     font-size : 16px;
-//     margin : 0;
-//   }
-// `
-},{}],"src/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.GlobalStyles = void 0;
+
+var _styledComponents = require("styled-components");
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n  html, body {\n    font-family : 'Helvetica Neue', Helvetica, sans-serif;\n    -webkit-font-smoothing : antialiased;\n    -moz-osx-font-smoothing : antialiased;\n    background-color : #000000;\n    color : #333333;\n    font-size : 16px;\n    margin : 0;\n  }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var GlobalStyles = (0, _styledComponents.createGlobalStyle)(_templateObject());
+exports.GlobalStyles = GlobalStyles;
+},{"styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"src/index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -37226,7 +37291,7 @@ var _globalStyles = require("./global-styles");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom.default.render( /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_app.App, null)), document.getElementById('root'));
+_reactDom.default.render( /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_globalStyles.GlobalStyles, null), /*#__PURE__*/_react.default.createElement(_app.App, null)), document.getElementById('root'));
 },{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./app":"src/app.js","./global-styles":"src/global-styles.js"}],"../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
