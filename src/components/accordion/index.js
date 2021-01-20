@@ -37,6 +37,12 @@ Accordion.Title = function AccordionTitle({ children, ...restProps }) {
   </Title>
 }
 
+Accordion.Frame = function AccordionFrame({ children, ...restProps }) {
+  return <Frame { ...restProps }>
+    { children }
+  </Frame>
+}
+
 Accordion.Header = function AccordionHeader({ children, ...restProps }) {
   const {toggleShow, setToggleShow} = useContext(ToggleContext)
 
@@ -53,7 +59,8 @@ Accordion.Header = function AccordionHeader({ children, ...restProps }) {
 }
 
 Accordion.Body = function AccordionBody({ children, ...restProps }) {
-  return <Body { ...restProps }>
-    { children }
-  </Body>
+  const { toggleShow } = useContext(ToggleContext)
+  return (
+      toggleShow && <Body {...restProps}>{children}</Body>
+  )
 }

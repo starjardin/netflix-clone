@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const Container = styled.section`
   display : flex;
   border-bottom : 8px solid #222;
 `
@@ -40,7 +40,13 @@ export const Header = styled.div`
   background-color : #303030;
   user-select : none;
   align-items : center;
+  box-sizing : border-box;
   padding : 0.8em 1.2em;
+
+  img {
+    filter : brightness(0) invert(1);
+    width : 24px;
+  }
 
   @media (max-width : 600px) {
     font-size : 16px;
@@ -55,6 +61,7 @@ export const Body = styled.div`
   background-color : #303030;
   use-select : none;
   align-items : center;
+  box-sizing : border-box;
   padding : 0.8em 1.2em;
 
   @media (max-width : 600px) {
@@ -64,5 +71,6 @@ export const Body = styled.div`
 `
 
 export const Frame = styled.div`
-  margin-bottom : 1px;
+  margin-bottom : 40px;
+  max-width : 1200px;
 `
