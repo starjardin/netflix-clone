@@ -34249,30 +34249,7 @@ if ("development" !== "production") {
     style: _propTypes.default.object
   });
 }
-},{"react-router":"node_modules/react-router/esm/react-router.js","@babel/runtime/helpers/esm/inheritsLoose":"node_modules/@babel/runtime/helpers/esm/inheritsLoose.js","react":"node_modules/react/index.js","history":"node_modules/history/esm/history.js","prop-types":"node_modules/prop-types/index.js","tiny-warning":"node_modules/tiny-warning/dist/tiny-warning.esm.js","@babel/runtime/helpers/esm/extends":"node_modules/@babel/runtime/helpers/esm/extends.js","@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":"node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js","tiny-invariant":"node_modules/tiny-invariant/dist/tiny-invariant.esm.js"}],"src/fixtures/jumbo.json":[function(require,module,exports) {
-module.exports = [{
-  "id": 1,
-  "title": "Enjoy on your TV.",
-  "subTitle": "Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.",
-  "image": "/images/misc/home-tv.jpg",
-  "alt": "Tiger King on Netflix",
-  "direction": "row"
-}, {
-  "id": 2,
-  "title": "Download your programmes to watch on the go.",
-  "subTitle": "Save your data and watch all your favourites offline.",
-  "image": "/images/misc/home-mobile.jpg",
-  "alt": "Tiger King on Netflix",
-  "direction": "row-reverse"
-}, {
-  "id": 3,
-  "title": "Watch everywhere.",
-  "subTitle": "Stream unlimited films and TV programmes on your phone, tablet, laptop and TV without paying more.",
-  "image": "/images/misc/home-imac.jpg",
-  "alt": "Money Heist on Netflix",
-  "direction": "row"
-}];
-},{}],"node_modules/react-is/cjs/react-is.development.js":[function(require,module,exports) {
+},{"react-router":"node_modules/react-router/esm/react-router.js","@babel/runtime/helpers/esm/inheritsLoose":"node_modules/@babel/runtime/helpers/esm/inheritsLoose.js","react":"node_modules/react/index.js","history":"node_modules/history/esm/history.js","prop-types":"node_modules/prop-types/index.js","tiny-warning":"node_modules/tiny-warning/dist/tiny-warning.esm.js","@babel/runtime/helpers/esm/extends":"node_modules/@babel/runtime/helpers/esm/extends.js","@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":"node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js","tiny-invariant":"node_modules/tiny-invariant/dist/tiny-invariant.esm.js"}],"node_modules/react-is/cjs/react-is.development.js":[function(require,module,exports) {
 /** @license React v17.0.1
  * react-is.development.js
  *
@@ -36529,7 +36506,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n  width : 50%;\n\n  @media (max-width : 1000px) {\n    width : 100%;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  width : 50%;\n\n  @media (max-width : 1000px) {\n    width : 100%;\n    flex-direction : column;\n  }\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -36648,7 +36625,7 @@ Jumbotron.SubTitle = function JumbotronSubTitle(_ref4) {
   var children = _ref4.children,
       restProps = _objectWithoutProperties(_ref4, ["children"]);
 
-  return /*#__PURE__*/_react.default.createElement(_jumbotron.SubTitle, null, children);
+  return /*#__PURE__*/_react.default.createElement(_jumbotron.SubTitle, restProps, children);
 };
 
 Jumbotron.Pane = function JumbotronPane(_ref5) {
@@ -36664,7 +36641,445 @@ Jumbotron.Image = function JumbotronImage(_ref6) {
 
   return /*#__PURE__*/_react.default.createElement(_jumbotron.Image, restProps);
 };
-},{"react":"node_modules/react/index.js","./styles/jumbotron":"src/components/jumbotron/styles/jumbotron.js"}],"src/containers/jumbotron.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./styles/jumbotron":"src/components/jumbotron/styles/jumbotron.js"}],"src/components/footer/styels/footer.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Break = exports.Text = exports.Link = exports.Title = exports.Row = exports.Column = exports.Container = void 0;
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _templateObject7() {
+  var data = _taggedTemplateLiteral(["\n"]);
+
+  _templateObject7 = function _templateObject7() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  var data = _taggedTemplateLiteral(["\n  color : #757575;\n  margin-bottom : 40px;\n  font-size : 13px;\n"]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n  color : #757575;\n  margin-bottom : 20px;\n  font-size : 13px;\n  text-decoration : none;\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n  color : #757575;\n  margin-bottom : 40px;\n  font-size : 16px;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n  display : grid;\n  grid-template-columns : repeat(auto-fill, minmax(230px, 1fr));\n  grid-gap : 15px;\n\n  @media (max-width : 1000px) {\n    grid-template-columns : repeat(auto-fill, minmax(150px, 1fr));\n  }\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n  display : flex;\n  flex-direction : column;\n  text-align : left;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n  display : flex;\n  max-width : 1000px;\n  flex-direction : column;\n  padding : 70px 56px;\n  margin : auto;\n\n  @media (max-width : 1000px) {\n    padding : 70px 30px;\n  }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var Container = _styledComponents.default.div(_templateObject());
+
+exports.Container = Container;
+
+var Column = _styledComponents.default.div(_templateObject2());
+
+exports.Column = Column;
+
+var Row = _styledComponents.default.div(_templateObject3());
+
+exports.Row = Row;
+
+var Title = _styledComponents.default.p(_templateObject4());
+
+exports.Title = Title;
+
+var Link = _styledComponents.default.a(_templateObject5());
+
+exports.Link = Link;
+
+var Text = _styledComponents.default.p(_templateObject6());
+
+exports.Text = Text;
+
+var Break = _styledComponents.default.div(_templateObject7());
+
+exports.Break = Break;
+},{"styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"src/components/footer/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Footer;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _footer = require("./styels/footer");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+function Footer(_ref) {
+  var children = _ref.children,
+      resProps = _objectWithoutProperties(_ref, ["children"]);
+
+  return /*#__PURE__*/_react.default.createElement(_footer.Container, resProps, children);
+}
+
+Footer.Row = function FooterRow(_ref2) {
+  var children = _ref2.children,
+      restProps = _objectWithoutProperties(_ref2, ["children"]);
+
+  return /*#__PURE__*/_react.default.createElement(_footer.Row, restProps, children);
+};
+
+Footer.Column = function FooterColumn(_ref3) {
+  var children = _ref3.children,
+      restProps = _objectWithoutProperties(_ref3, ["children"]);
+
+  return /*#__PURE__*/_react.default.createElement(_footer.Column, restProps, children);
+};
+
+Footer.Link = function FooterLink(_ref4) {
+  var children = _ref4.children,
+      restProps = _objectWithoutProperties(_ref4, ["children"]);
+
+  return /*#__PURE__*/_react.default.createElement(_footer.Link, restProps, children);
+};
+
+Footer.Title = function FooterTitle(_ref5) {
+  var children = _ref5.children,
+      restProps = _objectWithoutProperties(_ref5, ["children"]);
+
+  return /*#__PURE__*/_react.default.createElement(_footer.Title, restProps, children);
+};
+
+Footer.Text = function FooterText(_ref6) {
+  var children = _ref6.children,
+      restProps = _objectWithoutProperties(_ref6, ["children"]);
+
+  return /*#__PURE__*/_react.default.createElement(_footer.Text, restProps, children);
+};
+
+Footer.Break = function FooterBreak() {
+  return /*#__PURE__*/_react.default.createElement(_footer.Break, null);
+};
+},{"react":"node_modules/react/index.js","./styels/footer":"src/components/footer/styels/footer.js"}],"src/components/accordion/styles/accordion.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Item = exports.Inner = exports.Body = exports.Header = exports.Title = exports.Container = void 0;
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _templateObject6() {
+  var data = _taggedTemplateLiteral([""]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = _taggedTemplateLiteral([""]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteral([""]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral([""]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral([""]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral([""]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var Container = _styledComponents.default.div(_templateObject());
+
+exports.Container = Container;
+
+var Title = _styledComponents.default.div(_templateObject2());
+
+exports.Title = Title;
+
+var Header = _styledComponents.default.div(_templateObject3());
+
+exports.Header = Header;
+
+var Body = _styledComponents.default.div(_templateObject4());
+
+exports.Body = Body;
+
+var Inner = _styledComponents.default.div(_templateObject5());
+
+exports.Inner = Inner;
+
+var Item = _styledComponents.default.div(_templateObject6());
+
+exports.Item = Item;
+},{"styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"src/components/accordion/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Accordion;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _accordion = require("./styles/accordion");
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+function Accordion(_ref) {
+  var children = _ref.children,
+      restProps = _objectWithoutProperties(_ref, ["children"]);
+
+  return /*#__PURE__*/_react.default.createElement(_accordion.Container, restProps, /*#__PURE__*/_react.default.createElement(_accordion.Inner, null, children));
+}
+
+Accordion.Item = function AccordionItem(_ref2) {
+  var children = _ref2.children,
+      restProps = _objectWithoutProperties(_ref2, ["children"]);
+
+  return /*#__PURE__*/_react.default.createElement(_accordion.Item, restProps, children);
+};
+
+Accordion.Title = function AccordionTitle(_ref3) {
+  var children = _ref3.children,
+      restProps = _objectWithoutProperties(_ref3, ["children"]);
+
+  return /*#__PURE__*/_react.default.createElement(_accordion.Title, restProps, children);
+};
+
+Accordion.Title = function AccordionTitle(_ref4) {
+  var children = _ref4.children,
+      restProps = _objectWithoutProperties(_ref4, ["children"]);
+
+  return /*#__PURE__*/_react.default.createElement(_accordion.Title, restProps, children);
+};
+
+Accordion.Header = function AccordionHeader(_ref5) {
+  var children = _ref5.children,
+      restProps = _objectWithoutProperties(_ref5, ["children"]);
+
+  return /*#__PURE__*/_react.default.createElement(_accordion.Header, restProps, children);
+};
+
+Accordion.Body = function AccordionBody(_ref6) {
+  var children = _ref6.children,
+      restProps = _objectWithoutProperties(_ref6, ["children"]);
+
+  return /*#__PURE__*/_react.default.createElement(_accordion.Body, restProps, children);
+};
+},{"react":"node_modules/react/index.js","./styles/accordion":"src/components/accordion/styles/accordion.js"}],"src/components/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "Jumbotron", {
+  enumerable: true,
+  get: function () {
+    return _jumbotron.default;
+  }
+});
+Object.defineProperty(exports, "Footer", {
+  enumerable: true,
+  get: function () {
+    return _footer.default;
+  }
+});
+Object.defineProperty(exports, "Accordion", {
+  enumerable: true,
+  get: function () {
+    return _accordion.default;
+  }
+});
+
+var _jumbotron = _interopRequireDefault(require("./jumbotron"));
+
+var _footer = _interopRequireDefault(require("./footer"));
+
+var _accordion = _interopRequireDefault(require("./accordion"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+},{"./jumbotron":"src/components/jumbotron/index.js","./footer":"src/components/footer/index.js","./accordion":"src/components/accordion/index.js"}],"src/containers/footer.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = FooterContanier;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _components = require("../components");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function FooterContanier() {
+  return /*#__PURE__*/_react.default.createElement(_components.Footer, null, /*#__PURE__*/_react.default.createElement(_components.Footer.Title, null, "Question, Contact us?"), /*#__PURE__*/_react.default.createElement(_components.Footer.Row, null, /*#__PURE__*/_react.default.createElement(_components.Footer.Column, null, /*#__PURE__*/_react.default.createElement(_components.Footer.Link, {
+    href: "#"
+  }, "FAQ"), /*#__PURE__*/_react.default.createElement(_components.Footer.Link, {
+    href: "#"
+  }, "Investor relation"), /*#__PURE__*/_react.default.createElement(_components.Footer.Link, {
+    href: "#"
+  }, "Ways to watch"), /*#__PURE__*/_react.default.createElement(_components.Footer.Link, {
+    href: "#"
+  }, "Corporate Informations"), /*#__PURE__*/_react.default.createElement(_components.Footer.Link, {
+    href: "#"
+  }, "Netflix Originals")), /*#__PURE__*/_react.default.createElement(_components.Footer.Column, null, /*#__PURE__*/_react.default.createElement(_components.Footer.Link, {
+    href: "#"
+  }, "Help center"), /*#__PURE__*/_react.default.createElement(_components.Footer.Link, {
+    href: "#"
+  }, "Jobs"), /*#__PURE__*/_react.default.createElement(_components.Footer.Link, {
+    href: "#"
+  }, "Terms of Use"), /*#__PURE__*/_react.default.createElement(_components.Footer.Link, {
+    href: "#"
+  }, "Contact us")), /*#__PURE__*/_react.default.createElement(_components.Footer.Column, null, /*#__PURE__*/_react.default.createElement(_components.Footer.Link, {
+    href: "#"
+  }, "Account"), /*#__PURE__*/_react.default.createElement(_components.Footer.Link, {
+    href: "#"
+  }, "Redeem gift cards"), /*#__PURE__*/_react.default.createElement(_components.Footer.Link, {
+    href: "#"
+  }, "Privacy"), /*#__PURE__*/_react.default.createElement(_components.Footer.Link, {
+    href: "#"
+  }, "Speed test")), /*#__PURE__*/_react.default.createElement(_components.Footer.Column, null, /*#__PURE__*/_react.default.createElement(_components.Footer.Link, {
+    href: "#"
+  }, "Media center"), /*#__PURE__*/_react.default.createElement(_components.Footer.Link, {
+    href: "#"
+  }, "Buy gift Cards"), /*#__PURE__*/_react.default.createElement(_components.Footer.Link, {
+    href: "#"
+  }, "Cookies preferences"), /*#__PURE__*/_react.default.createElement(_components.Footer.Link, {
+    href: "#"
+  }, "Legal notices"))));
+}
+},{"react":"node_modules/react/index.js","../components":"src/components/index.js"}],"src/fixtures/jumbo.json":[function(require,module,exports) {
+module.exports = [{
+  "id": 1,
+  "title": "Enjoy on your TV.",
+  "subTitle": "Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.",
+  "image": "/images/misc/home-tv.jpg",
+  "alt": "Tiger King on Netflix",
+  "direction": "row"
+}, {
+  "id": 2,
+  "title": "Download your programmes to watch on the go.",
+  "subTitle": "Save your data and watch all your favourites offline.",
+  "image": "/images/misc/home-mobile.jpg",
+  "alt": "Tiger King on Netflix",
+  "direction": "row-reverse"
+}, {
+  "id": 3,
+  "title": "Watch everywhere.",
+  "subTitle": "Stream unlimited films and TV programmes on your phone, tablet, laptop and TV without paying more.",
+  "image": "/images/misc/home-imac.jpg",
+  "alt": "Money Heist on Netflix",
+  "direction": "row"
+}];
+},{}],"src/containers/jumbotron.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -36676,23 +37091,68 @@ var _react = _interopRequireDefault(require("react"));
 
 var _jumbo = _interopRequireDefault(require("../fixtures/jumbo.json"));
 
-var _jumbotron = _interopRequireDefault(require("../components/jumbotron"));
+var _components = require("../components");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function JumbotronContainer() {
-  return /*#__PURE__*/_react.default.createElement(_jumbotron.default.Container, null, _jumbo.default.map(function (item) {
-    return /*#__PURE__*/_react.default.createElement(_jumbotron.default, {
+  return /*#__PURE__*/_react.default.createElement(_components.Jumbotron.Container, null, _jumbo.default.map(function (item) {
+    return /*#__PURE__*/_react.default.createElement(_components.Jumbotron, {
       key: item.id
-    }, /*#__PURE__*/_react.default.createElement(_jumbotron.default.Pane, null, /*#__PURE__*/_react.default.createElement(_jumbotron.default.Title, null, item.title), /*#__PURE__*/_react.default.createElement(_jumbotron.default.SubTitle, {
+    }, /*#__PURE__*/_react.default.createElement(_components.Jumbotron.Pane, null, /*#__PURE__*/_react.default.createElement(_components.Jumbotron.Title, null, item.title), /*#__PURE__*/_react.default.createElement(_components.Jumbotron.SubTitle, {
       direction: item.direction
-    }, item.subTitle)), /*#__PURE__*/_react.default.createElement(_jumbotron.default.Pane, null, /*#__PURE__*/_react.default.createElement(_jumbotron.default.Image, {
+    }, item.subTitle)), /*#__PURE__*/_react.default.createElement(_components.Jumbotron.Pane, null, /*#__PURE__*/_react.default.createElement(_components.Jumbotron.Image, {
       src: item.image,
       alt: item.image
     })));
   }));
 }
-},{"react":"node_modules/react/index.js","../fixtures/jumbo.json":"src/fixtures/jumbo.json","../components/jumbotron":"src/components/jumbotron/index.js"}],"src/pages/Home.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../fixtures/jumbo.json":"src/fixtures/jumbo.json","../components":"src/components/index.js"}],"src/fixtures/faqs.json":[function(require,module,exports) {
+module.exports = [{
+  "id": 1,
+  "header": "What is Netflix?",
+  "body": "Netflix is a streaming service that offers a wide variety of award-winning TV programmes, films, anime, documentaries and more – on thousands of internet-connected devices.\n\nYou can watch as much as you want, whenever you want, without a single advert – all for one low monthly price. There's always something new to discover, and new TV programmes and films are added every week!"
+}, {
+  "id": 2,
+  "header": "How much does Netflix cost?",
+  "body": "Watch Netflix on your smartphone, tablet, smart TV, laptop or streaming device, all for one low fixed monthly fee. Plans start from £5.99 a month. No extra costs or contracts."
+}, {
+  "id": 3,
+  "header": "Where can I watch?",
+  "body": "Watch anywhere, anytime, on an unlimited number of devices. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.\n\nYou can also download your favourite programmes with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere."
+}, {
+  "id": 4,
+  "header": "How do I cancel?",
+  "body": "Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account at any time."
+}, {
+  "id": 5,
+  "header": "What can I watch on Netflix?",
+  "body": "Netflix has an extensive library of feature films, documentaries, TV programmes, anime, award-winning Netflix originals, and more. Watch as much as you want, any time you want."
+}];
+},{}],"src/containers/faqs.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = FaqsContainer;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _components = require("../components");
+
+var _faqs = _interopRequireDefault(require("../fixtures/faqs.json"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function FaqsContainer() {
+  return /*#__PURE__*/_react.default.createElement(_components.Accordion, null, /*#__PURE__*/_react.default.createElement(_components.Accordion.Title, null, "Hello world"), _faqs.default.map(function (item) {
+    return /*#__PURE__*/_react.default.createElement(_components.Accordion.Item, {
+      key: item.id
+    }, /*#__PURE__*/_react.default.createElement(_components.Accordion.Header, null, item.header), /*#__PURE__*/_react.default.createElement(_components.Accordion.Body, null, item.body));
+  }));
+}
+},{"react":"node_modules/react/index.js","../components":"src/components/index.js","../fixtures/faqs.json":"src/fixtures/faqs.json"}],"src/pages/Home.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -36702,14 +37162,18 @@ exports.default = Home;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _footer = _interopRequireDefault(require("../containers/footer"));
+
 var _jumbotron = require("../containers/jumbotron");
+
+var _faqs = _interopRequireDefault(require("../containers/faqs"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Home() {
-  return /*#__PURE__*/_react.default.createElement(_jumbotron.JumbotronContainer, null);
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_jumbotron.JumbotronContainer, null), /*#__PURE__*/_react.default.createElement(_faqs.default, null), /*#__PURE__*/_react.default.createElement(_footer.default, null));
 }
-},{"react":"node_modules/react/index.js","../containers/jumbotron":"src/containers/jumbotron.js"}],"src/app.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../containers/footer":"src/containers/footer.js","../containers/jumbotron":"src/containers/jumbotron.js","../containers/faqs":"src/containers/faqs.js"}],"src/app.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -36736,7 +37200,20 @@ function App() {
     path: "/"
   }, /*#__PURE__*/_react.default.createElement(_Home.default, null))));
 }
-},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","./pages/Home":"src/pages/Home.js"}],"src/index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","./pages/Home":"src/pages/Home.js"}],"src/global-styles.js":[function(require,module,exports) {
+// import { creatGlobalStyle } from 'styled-components'
+// export const GlobalStyles = creatGlobalStyle`
+//   html, body {
+//     font-family : 'Helvetica Neue', Helvetica, sans-serif;
+//     -webkit-font-smoothing : antialiased;
+//     -moz-osx-font-smoothing : antialiased;
+//     backgorund-color : #000000;
+//     color : #333333;
+//     font-size : 16px;
+//     margin : 0;
+//   }
+// `
+},{}],"src/index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -36745,10 +37222,12 @@ var _reactDom = _interopRequireDefault(require("react-dom"));
 
 var _app = require("./app");
 
+var _globalStyles = require("./global-styles");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom.default.render( /*#__PURE__*/_react.default.createElement(_app.App, null), document.getElementById('root'));
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./app":"src/app.js"}],"../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+_reactDom.default.render( /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_app.App, null)), document.getElementById('root'));
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./app":"src/app.js","./global-styles":"src/global-styles.js"}],"../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -36776,7 +37255,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54313" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55899" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
