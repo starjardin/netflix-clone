@@ -1,2 +1,2 @@
 export { default as Home } from "./Home"
-export { default as Singin } from "./signin"
+export { default as Signin } from "./signin"

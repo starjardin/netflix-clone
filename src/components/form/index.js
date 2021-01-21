@@ -28,11 +28,11 @@ Form.Input = function FormInput({ children, ...restProps }) {
 	return <Input {...restProps}>{ children }</Input>
 }
 
-From.TextSmall=function FormTextSmall({children, ...restProps}) {
+Form.TextSmall=function FormTextSmall({children, ...restProps}) {
 	return <TextSmall {...restProps}>{children}</TextSmall>
 }
 
-From.Base=function FormBase({children, ...restProps}) {
+Form.Base=function FormBase({children, ...restProps}) {
 	return <Base {...restProps}>{children } </Base>
 }
 
@@ -48,6 +48,6 @@ Form.Error = function FromError({ children, ...restProps }) {
   return <Error {...restProps}>{ children }</Error>
 }
 
-From.Text=function FromText({children, restProps}) {
+Form.Text=function FormText({children, restProps}) {
 	return <Text {...restProps}	>{ children }</Text>
 }

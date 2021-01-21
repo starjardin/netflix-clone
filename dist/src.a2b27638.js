@@ -37622,14 +37622,14 @@ Form.Input = function FormInput(_ref3) {
   return /*#__PURE__*/_react.default.createElement(_form.Input, restProps, children);
 };
 
-From.TextSmall = function FormTextSmall(_ref4) {
+Form.TextSmall = function FormTextSmall(_ref4) {
   var children = _ref4.children,
       restProps = _objectWithoutProperties(_ref4, ["children"]);
 
   return /*#__PURE__*/_react.default.createElement(_form.TextSmall, restProps, children);
 };
 
-From.Base = function FormBase(_ref5) {
+Form.Base = function FormBase(_ref5) {
   var children = _ref5.children,
       restProps = _objectWithoutProperties(_ref5, ["children"]);
 
@@ -37658,7 +37658,7 @@ Form.Error = function FromError(_ref8) {
   return /*#__PURE__*/_react.default.createElement(_form.Error, restProps, children);
 };
 
-From.Text = function FromText(_ref9) {
+Form.Text = function FormText(_ref9) {
   var children = _ref9.children,
       restProps = _ref9.restProps;
   return /*#__PURE__*/_react.default.createElement(Text, restProps, children);
@@ -37991,7 +37991,7 @@ Object.defineProperty(exports, "Home", {
     return _Home.default;
   }
 });
-Object.defineProperty(exports, "Singin", {
+Object.defineProperty(exports, "Signin", {
   enumerable: true,
   get: function () {
     return _signin.default;
@@ -38025,17 +38025,16 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-//import Signin from './pages/signin';
 function App() {
   return /*#__PURE__*/_react.default.createElement(_reactRouterDom.BrowserRouter, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Switch, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     path: ROUTES.HOME,
     exact: true
   }, /*#__PURE__*/_react.default.createElement(_pages.Home, null)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     exact: true,
-    path: ROUTES.SING_IN
+    path: ROUTES.SIGN_IN
   }, /*#__PURE__*/_react.default.createElement(_pages.Signin, null)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     exact: true,
-    path: ROUTES.SING_UP
+    path: ROUTES.SIGN_UP
   }, /*#__PURE__*/_react.default.createElement("p", null, "I will be the sign up page")), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     exact: true,
     path: ROUTES.BROWSE
@@ -38136,7 +38135,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61312" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62169" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
