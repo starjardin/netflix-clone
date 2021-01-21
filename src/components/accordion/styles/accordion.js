@@ -59,7 +59,7 @@ export const Body = styled.div`
   cursor : pointer;
   margin-bottom : 1px;
   background-color : #303030;
-  use-select : none;
+  user-select : none;
   align-items : center;
   box-sizing : border-box;
   padding : 0.8em 1.2em;
