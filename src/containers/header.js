@@ -9,7 +9,7 @@ export default function HeaderContainer({ children, ...restProps }) {
               to={ ROUTES.HOME }
                src='/images/misc/logo.svg'
                alt='netflix' />
-          <Header.ButtonLink to={ROUTES.SIGN_IN} />
+          <Header.ButtonLink to={ROUTES.SIGN_IN}>Sign In</Header.ButtonLink>
         </Header.Frame>
          { children }
     </Header>

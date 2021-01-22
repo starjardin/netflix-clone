@@ -6,7 +6,8 @@ import {
   Submit,
   Link,
 	Input,
-	Base,
+  Base,
+  Text,
 	TextSmall
 } from './styles/form'
 //TODO: input, link, sbmitbutton, titile, conatiner, errorMessage 
@@ -41,7 +42,7 @@ Form.Submit=function FormSubmit({children,...restProps}) {
 }
 
 Form.Link = function FormLink({ to, children, ...restProps }) {
-  return <Link { ...restProps }>{ children }</Link>
+  return <Link { ...restProps } to={to}>{ children }</Link>
 }
 
 Form.Error = function FromError({ children, ...restProps }) {
