@@ -18,7 +18,7 @@ export default function Signin() {
 	}
 	
 	return (
-		<>
+		<React.Fragment>
 			<HeaderContainer>
 				<Form>
 					<Form.Title>Sign in</Form.Title>
@@ -43,12 +43,12 @@ export default function Signin() {
 		            New to Netflix? <Form.Link to="/signup">Sign up now.</Form.Link>
 						</Form.Text>
 						<Form.TextSmall>
-		          This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.
+		          This page is protected by Google reCAPTCHA to ensure you're not a robot. Learn more.
 		        </Form.TextSmall>
 					</Form.Base>
 				</Form>
 			</HeaderContainer>
 			<FooterContainer />										
-		</>
+		</React.Fragment>
 	)
 }

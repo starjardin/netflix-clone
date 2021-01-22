@@ -38193,7 +38193,7 @@ function Signin() {
     type: "submit"
   }, "Sing in"), /*#__PURE__*/_react.default.createElement(_form.default.Text, null, "New to Netflix? ", /*#__PURE__*/_react.default.createElement(_form.default.Link, {
     to: "/signup"
-  }, "Sign up now.")), /*#__PURE__*/_react.default.createElement(_form.default.TextSmall, null, "This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.")))), /*#__PURE__*/_react.default.createElement(_footer.default, null));
+  }, "Sign up now.")), /*#__PURE__*/_react.default.createElement(_form.default.TextSmall, null, "This page is protected by Google reCAPTCHA to ensure you're not a robot. Learn more.")))), /*#__PURE__*/_react.default.createElement(_footer.default, null));
 }
 },{"react":"node_modules/react/index.js","../components/form":"src/components/form/index.js","../containers/header":"src/containers/header.js","../containers/footer":"src/containers/footer.js"}],"src/context/firebase.js":[function(require,module,exports) {
 "use strict";
