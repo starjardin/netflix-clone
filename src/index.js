@@ -4,6 +4,8 @@ import { App } from './app';
 import { FirebaseContext } from './context/firebase';
 import { GlobalStyles } from './global-styles';
 
+//import { seedDatabase } from './seed'
+
 const config = {
   databaseUrl: "",
   apiKey: "AIzaSyCy_vG5YzBC0Yii1uIcD6jjK7z2i2g8J1k",
@@ -15,6 +17,7 @@ const config = {
 };
 
 const firebase = window.firebase.initializeApp(config)
+//seedDatabase(firebase)
 
 ReactDOM.render(
   <>
