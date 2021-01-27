@@ -12,10 +12,17 @@ export const Inner = styled.div`
   margin : auto;
 `
 export const Item = styled.div`
-  color : #fff;
-  margin-bottom : 10px;
+  color: white;
+  margin: auto;
+  margin-bottom: 10px;
+  max-width: 728px;
+  width: 100%;
+
   &:first-of-type {
-    margin-top : 3em;
+    margin-top: 3em;
+  }
+  &:last-of-type {
+    margin-bottom: 0;
   }
 `
 export const Title = styled.div`
@@ -31,25 +38,29 @@ export const Title = styled.div`
   }
 `
 export const Header = styled.div`
-  display : flex;
-  justify-content : space-between;
-  cursor : pointer;
-  margin-bottom : 1px;
-  font-weight : normal;
-  font-size : 26px;
-  background-color : #303030;
-  user-select : none;
-  align-items : center;
-  box-sizing : border-box;
-  padding : 0.8em 1.2em;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-bottom: 1px;
+  font-size: 26px;
+  font-weight: normal;
+  background: #303030;
+  padding: 0.8em 1.2em 0.8em 1.2em;
+  user-select: none;
+  align-items: center;
 
   img {
-    filter : brightness(0) invert(1);
-    width : 24px;
+    filter: brightness(0) invert(1);
+    width: 24px;
+    user-select: none;
+
+    @media (max-width: 600px) {
+      width: 16px;
+    }
   }
 
-  @media (max-width : 600px) {
-    font-size : 16px;
+  @media (max-width: 600px) {
+    font-size: 16px;
   }
 `
 export const Body = styled.div`
