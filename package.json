@@ -1,6 +1,7 @@
 {
   "name": "project",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "fuse.js": "^5.2.3",
     "normalize.css": "8.0.1",
     "react": "^17.0.1",
