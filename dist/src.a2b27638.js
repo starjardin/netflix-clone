@@ -38209,16 +38209,154 @@ Loading.ReleaseBody = function LoadingReleaseBody(_ref2) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Container = void 0;
-
-var _react = _interopRequireDefault(require("react"));
+exports.Maturity = exports.Content = exports.FeatureClose = exports.FeatureTitle = exports.Feature = exports.FeatureText = exports.Item = exports.Image = exports.Meta = exports.Entities = exports.Text = exports.SubTitle = exports.Group = exports.Container = exports.Title = void 0;
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _templateObject15() {
+  var data = _taggedTemplateLiteral(["\n    background-color: ", ";\n    border-radius: 15px;\n    width: 20px;\n    padding: 5px;\n    text-align: center;\n    color: white;\n    font-weight: bold;\n    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);\n    margin-right: 10px;\n    font-size: 12px;\n"]);
+
+  _templateObject15 = function _templateObject15() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject14() {
+  var data = _taggedTemplateLiteral(["\n    margin: 56px;\n    max-width: 500px;\n    line-height: normal;\n    @media (max-width: 1000px) {\n        margin: 30px;\n        max-width: none;\n    }\n"]);
+
+  _templateObject14 = function _templateObject14() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject13() {
+  var data = _taggedTemplateLiteral(["\n    color: white;\n    position: absolute;\n    right: 20px;\n    top: 20px;\n    cursor: pointer;\n    background-color: transparent;\n    border: 0;\n    img {\n        filter: brightness(0) invert(1);\n        width: 24px;\n    }\n"]);
+
+  _templateObject13 = function _templateObject13() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject12() {
+  var data = _taggedTemplateLiteral(["\n    margin-left: 0;\n"]);
+
+  _templateObject12 = function _templateObject12() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject11() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: row;\n    background: url(", ");\n    background-size: contain;\n    position: relative;\n    height: 360px;\n    background-position-x: right;\n    background-repeat: no-repeat;\n    background-color: black;\n    @media (max-width: 1000px) {\n        height: auto;\n        background-size: auto;\n        ", " {\n            font-size: 20px;\n            line-height: 20px;\n            margin-bottom: 10px;\n        }\n        ", " {\n            font-size: 14px;\n        }\n    }\n"]);
+
+  _templateObject11 = function _templateObject11() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject10() {
+  var data = _taggedTemplateLiteral(["\n    font-size: 18px;\n    color: white;\n    font-weight: ", ";\n    margin: 0;\n    @media (max-width: 800px) {\n        line-height: 22px;\n    }\n"]);
+
+  _templateObject10 = function _templateObject10() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject9() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: column;\n    margin-right: 5px;\n    position: relative;\n    cursor: pointer;\n    transition: transform 0.2;\n    &:hover {\n        transform: scale(1.3);\n        z-index: 99;\n    }\n    @media (min-width: 1000px) {\n        &:hover ", ", &:hover ", ", &:hover ", " {\n            display: block;\n            z-index: 100;\n        }\n    }\n    &:first-of-type {\n        margin-left: 56px;\n        @media (max-width: 1000px) {\n            margin-left: 30px;\n        }\n    }\n    &:last-of-type {\n        margin-right: 56px;\n        @media (max-width: 1000px) {\n            margin-right: 30px;\n        }\n    }\n"]);
+
+  _templateObject9 = function _templateObject9() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject8() {
+  var data = _taggedTemplateLiteral(["\n    border: 0;\n    width: 100%;\n    max-width: 305px;\n    cursor: pointer;\n    height: auto;\n    padding: 0;\n    margin: 0;\n"]);
+
+  _templateObject8 = function _templateObject8() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject7() {
+  var data = _taggedTemplateLiteral(["\n    display: none;\n    position: absolute;\n    bottom: 0;\n    padding: 10px;\n    background-color: #0000008f;\n"]);
+
+  _templateObject7 = function _templateObject7() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: row;\n"]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n    margin-top: 5px;\n    font-size: 10px;\n    color: white;\n    margin-bottom: 0;\n    user-select: none;\n    display: none;\n    line-height: normal;\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n    font-size: 12px;\n    color: white;\n    font-weight: bold;\n    margin-top: 0;\n    margin-bottom: 0;\n    user-select: none;\n    display: none;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: ", ";\n    ", ";\n    ", ";\n    > ", ":first-of-type {\n        @media (min-width: 1100px) {\n            margin-top: -150px;\n        }\n    }\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n    display: flex;\n    flex-direction: column;\n    margin-bottom: 50px;\n    box-sizing: border-box;\n    > ", " {\n        @media (max-width: 1000px) {\n            margin-left: 30px;\n        }\n    }\n    &:last-of-type {\n        margin-bottom: 0;\n    }\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject() {
-  var data = _taggedTemplateLiteral([""]);
+  var data = _taggedTemplateLiteral(["\n    font-size: 24px;\n    color: #e5e5e5;\n    font-weight: bold;\n    margin-left: 56px;\n    margin-right: 56px;\n    margin-top: 0;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -38229,16 +38367,89 @@ function _templateObject() {
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var Container = _styledComponents.default.div(_templateObject());
+var Title = _styledComponents.default.p(_templateObject());
+
+exports.Title = Title;
+
+var Container = _styledComponents.default.div(_templateObject2(), Title);
 
 exports.Container = Container;
-},{"react":"node_modules/react/index.js","styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"src/components/card/index.js":[function(require,module,exports) {
+
+var Group = _styledComponents.default.div(_templateObject3(), function (_ref) {
+  var flexDirection = _ref.flexDirection;
+  return flexDirection === 'row' ? 'row' : 'column';
+}, function (_ref2) {
+  var alignItems = _ref2.alignItems;
+  return alignItems && "align-items: ".concat(alignItems);
+}, function (_ref3) {
+  var margin = _ref3.margin;
+  return margin && "margin: ".concat(margin);
+}, Container);
+
+exports.Group = Group;
+
+var SubTitle = _styledComponents.default.p(_templateObject4());
+
+exports.SubTitle = SubTitle;
+
+var Text = _styledComponents.default.p(_templateObject5());
+
+exports.Text = Text;
+
+var Entities = _styledComponents.default.div(_templateObject6());
+
+exports.Entities = Entities;
+
+var Meta = _styledComponents.default.div(_templateObject7());
+
+exports.Meta = Meta;
+
+var Image = _styledComponents.default.img(_templateObject8());
+
+exports.Image = Image;
+
+var Item = _styledComponents.default.div(_templateObject9(), Meta, Text, SubTitle);
+
+exports.Item = Item;
+
+var FeatureText = _styledComponents.default.p(_templateObject10(), function (_ref4) {
+  var fontWeight = _ref4.fontWeight;
+  fontWeight === 'bold' ? 'bold' : 'normal';
+});
+
+exports.FeatureText = FeatureText;
+
+var Feature = _styledComponents.default.div(_templateObject11(), function (_ref5) {
+  var src = _ref5.src;
+  return src;
+}, Title, FeatureText);
+
+exports.Feature = Feature;
+var FeatureTitle = (0, _styledComponents.default)(Title)(_templateObject12());
+exports.FeatureTitle = FeatureTitle;
+
+var FeatureClose = _styledComponents.default.button(_templateObject13());
+
+exports.FeatureClose = FeatureClose;
+
+var Content = _styledComponents.default.div(_templateObject14());
+
+exports.Content = Content;
+
+var Maturity = _styledComponents.default.div(_templateObject15(), function (_ref6) {
+  var rating = _ref6.rating;
+  return rating >= 15 ? 'red' : 'green';
+});
+
+exports.Maturity = Maturity;
+},{"styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"src/components/card/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = Card;
+exports.FeatureContext = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
@@ -38247,8 +38458,6 @@ var _card = require("./styles/card");
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -38269,6 +38478,7 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
 var FeatureContext = (0, _react.createContext)();
+exports.FeatureContext = FeatureContext;
 
 function Card(_ref) {
   var children = _ref.children,
@@ -38345,25 +38555,23 @@ Card.Item = function CardItem(_ref8) {
       setShowFeature = _useContext.setShowFeature,
       setItemFeature = _useContext.setItemFeature;
 
-  return /*#__PURE__*/_react.default.createElement(_card.Item, _extends({}, restProps, _defineProperty({
+  return /*#__PURE__*/_react.default.createElement(_card.Item, _extends({
     onClick: function onClick() {
-      return setItemFeature(item);
+      setItemFeature(item);
+      setShowFeature(true);
     }
-  }, "onClick", function onClick() {
-    return setShowFeature(true);
-  })), children);
+  }, restProps), children);
 };
 
 Card.Image = function CardImage(_ref9) {
-  var children = _ref9.children,
-      restProps = _objectWithoutProperties(_ref9, ["children"]);
-
-  return /*#__PURE__*/_react.default.createElement(_card.Image, restProps, children);
+  var restProps = Object.assign({}, _ref9);
+  return /*#__PURE__*/_react.default.createElement(_card.Image, restProps);
 };
 
 Card.Feature = function CardFeature(_ref10) {
   var children = _ref10.children,
-      restProps = _objectWithoutProperties(_ref10, ["children"]);
+      category = _ref10.category,
+      restProps = _objectWithoutProperties(_ref10, ["children", "category"]);
 
   var _useContext2 = (0, _react.useContext)(FeatureContext),
       showFeature = _useContext2.showFeature,
@@ -38372,7 +38580,7 @@ Card.Feature = function CardFeature(_ref10) {
 
   return showFeature ? /*#__PURE__*/_react.default.createElement(_card.Feature, _extends({}, restProps, {
     src: "/images/".concat(category, "/").concat(itemFeature.genre, "/").concat(itemFeature.slug, "/large.jpg")
-  }), /*#__PURE__*/_react.default.createElement(_card.Content, null, /*#__PURE__*/_react.default.createElement(_card.FeatureTitle, null, itemFeature.genre), /*#__PURE__*/_react.default.createElement(_card.FeatureClose, null, itemFeature.description), /*#__PURE__*/_react.default.createElement(_card.FeatureClose, {
+  }), /*#__PURE__*/_react.default.createElement(_card.Content, null, /*#__PURE__*/_react.default.createElement(_card.FeatureTitle, null, itemFeature.title), /*#__PURE__*/_react.default.createElement(_card.FeatureText, null, itemFeature.description), /*#__PURE__*/_react.default.createElement(_card.FeatureClose, {
     onClick: function onClick() {
       return setShowFeature(false);
     }
@@ -38381,15 +38589,193 @@ Card.Feature = function CardFeature(_ref10) {
     alt: "Close"
   })), /*#__PURE__*/_react.default.createElement(_card.Group, {
     margin: "30px 0",
-    flesDirection: "row",
+    flexDirection: "row",
     alignItems: "center"
   }, /*#__PURE__*/_react.default.createElement(_card.Maturity, {
     rating: itemFeature.maturity
   }, itemFeature.maturity < 12 ? 'PG' : itemFeature.maturity), /*#__PURE__*/_react.default.createElement(_card.FeatureText, {
     fontWeight: "bold"
-  }, itemFeature.genre.chartAt(0).toUpperCase() + itemFeature.genre.slice(1)))), children) : null;
+  }, itemFeature.genre.charAt(0).toUpperCase() + itemFeature.genre.slice(1))), children)) : null;
 };
-},{"react":"node_modules/react/index.js","./styles/card":"src/components/card/styles/card.js"}],"src/components/index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./styles/card":"src/components/card/styles/card.js"}],"src/components/player/styles/player.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Button = exports.Close = exports.Inner = exports.Overlay = exports.Container = void 0;
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _templateObject5() {
+  var data = _taggedTemplateLiteral(["\n  background-color: #e50914;\n  border-color: #ff0a16;\n  width: 115px;\n  height: 45px;\n  text-transform: uppercase;\n  font-weight: bold;\n  color: white;\n  font-size: 18px;\n  height: 45px;\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  padding-left: 0;\n\n  &:hover {\n    transform: scale(1.05);\n    background-color: #ff0a16;\n  }\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n  position: absolute;\n  right: 15px;\n  top: 15px;\n  width: 22px;\n  height: 22px;\n  opacity: 0.3;\n  background-color: transparent;\n  border: 0;\n  cursor: pointer;\n\n  &:hover {\n    opacity: 1;\n  }\n\n  &:before,\n  &:after {\n    position: absolute;\n    left: 10px;\n    top: 0;\n    content: ' ';\n    height: 22px;\n    width: 2px;\n    background-color: #333;\n  }\n\n  &:before {\n    transform: rotate(45deg);\n  }\n  &:after {\n    transform: rotate(-45deg);\n  }\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n  position: relative;\n  width: 100%;\n  max-width: 900px;\n  margin: auto;\n\n  video {\n    height: 100%;\n    width: 100%;\n  }\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background: rgba(0, 0, 0, 0.75);\n  margin: 0 20px;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral([""]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var Container = _styledComponents.default.div(_templateObject());
+
+exports.Container = Container;
+
+var Overlay = _styledComponents.default.div(_templateObject2());
+
+exports.Overlay = Overlay;
+
+var Inner = _styledComponents.default.div(_templateObject3());
+
+exports.Inner = Inner;
+
+var Close = _styledComponents.default.button(_templateObject4());
+
+exports.Close = Close;
+
+var Button = _styledComponents.default.button(_templateObject5());
+
+exports.Button = Button;
+},{"styled-components":"node_modules/styled-components/dist/styled-components.browser.esm.js"}],"src/components/player/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Player;
+exports.PlayerContext = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _reactDom = _interopRequireDefault(require("react-dom"));
+
+var _player = require("./styles/player");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+var PlayerContext = (0, _react.createContext)();
+exports.PlayerContext = PlayerContext;
+
+function Player(_ref) {
+  var children = _ref.children,
+      restProps = _objectWithoutProperties(_ref, ["children"]);
+
+  var _useState = (0, _react.useState)(false),
+      _useState2 = _slicedToArray(_useState, 2),
+      showPlayer = _useState2[0],
+      setShowPlayer = _useState2[1];
+
+  return /*#__PURE__*/_react.default.createElement(PlayerContext.Provider, {
+    value: {
+      showPlayer: showPlayer,
+      setShowPlayer: setShowPlayer
+    }
+  }, /*#__PURE__*/_react.default.createElement(_player.Container, restProps, children));
+}
+
+Player.Video = function PlayerVideo(_ref2) {
+  var src = _ref2.src,
+      restProps = _objectWithoutProperties(_ref2, ["src"]);
+
+  var _useContext = (0, _react.useContext)(PlayerContext),
+      showPlayer = _useContext.showPlayer,
+      setShowPlayer = _useContext.setShowPlayer;
+
+  return showPlayer && _reactDom.default.createPortal( /*#__PURE__*/_react.default.createElement(_player.Overlay, {
+    onClick: function onClick() {
+      return setShowPlayer(false);
+    },
+    "data-testid": "player"
+  }, /*#__PURE__*/_react.default.createElement(_player.Inner, null, /*#__PURE__*/_react.default.createElement("video", {
+    id: "netflix-player",
+    controls: true
+  }, /*#__PURE__*/_react.default.createElement("source", {
+    src: "/videos/bunny.mp4",
+    type: "video/mp4"
+  })), /*#__PURE__*/_react.default.createElement(_player.Close, null))), document.body);
+};
+
+Player.Button = function PlayerButton(_ref3) {
+  var restProps = Object.assign({}, _ref3);
+
+  var _useContext2 = (0, _react.useContext)(PlayerContext),
+      showPlayer = _useContext2.showPlayer,
+      setShowPlayer = _useContext2.setShowPlayer;
+
+  console.log(showPlayer);
+  return /*#__PURE__*/_react.default.createElement(_player.Button, _extends({
+    onClick: function onClick() {
+      return setShowPlayer(!showPlayer);
+    }
+  }, restProps), "Play");
+};
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./styles/player":"src/components/player/styles/player.js"}],"src/components/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -38455,6 +38841,12 @@ Object.defineProperty(exports, "Card", {
     return _card.default;
   }
 });
+Object.defineProperty(exports, "Player", {
+  enumerable: true,
+  get: function () {
+    return _player.default;
+  }
+});
 
 var _jumbotron = _interopRequireDefault(require("./jumbotron"));
 
@@ -38476,8 +38868,10 @@ var _loading = _interopRequireDefault(require("./loading"));
 
 var _card = _interopRequireDefault(require("./card"));
 
+var _player = _interopRequireDefault(require("./player"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./jumbotron":"src/components/jumbotron/index.js","./footer":"src/components/footer/index.js","./accordion":"src/components/accordion/index.js","./opt-form":"src/components/opt-form/index.js","./header":"src/components/header/index.js","./feature":"src/components/feature/index.js","./form":"src/components/form/index.js","./profiles":"src/components/profiles/index.js","./loading":"src/components/loading/index.js","./card":"src/components/card/index.js"}],"src/containers/footer.js":[function(require,module,exports) {
+},{"./jumbotron":"src/components/jumbotron/index.js","./footer":"src/components/footer/index.js","./accordion":"src/components/accordion/index.js","./opt-form":"src/components/opt-form/index.js","./header":"src/components/header/index.js","./feature":"src/components/feature/index.js","./form":"src/components/form/index.js","./profiles":"src/components/profiles/index.js","./loading":"src/components/loading/index.js","./card":"src/components/card/index.js","./player":"src/components/player/index.js"}],"src/containers/footer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -38892,7 +39286,6 @@ function SignUp() {
         history.push(ROUTES.BROWSE);
       });
     }).catch(function (error) {
-      setFirstName('');
       setEmailAddress('');
       setPassword('');
       setError(error.message);
@@ -38933,7 +39326,1649 @@ function SignUp() {
     to: "/signin"
   }, "Sign in now.")), /*#__PURE__*/_react.default.createElement(_components.Form.TextSmall, null, "This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more."))), /*#__PURE__*/_react.default.createElement(_footer.default, null));
 }
-},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../context/firebase":"src/context/firebase.js","../components":"src/components/index.js","../containers/header":"src/containers/header.js","../containers/footer":"src/containers/footer.js","../constants/routes":"src/constants/routes.js"}],"src/containers/profiles.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../context/firebase":"src/context/firebase.js","../components":"src/components/index.js","../containers/header":"src/containers/header.js","../containers/footer":"src/containers/footer.js","../constants/routes":"src/constants/routes.js"}],"node_modules/fuse.js/dist/fuse.esm.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+/**
+ * Fuse.js v5.2.3 - Lightweight fuzzy-search (http://fusejs.io)
+ *
+ * Copyright (c) 2020 Kiro Risk (http://kiro.me)
+ * All Rights Reserved. Apache Software License 2.0
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ */
+var INFINITY = 1 / 0;
+
+var isArray = function isArray(value) {
+  return !Array.isArray ? Object.prototype.toString.call(value) === '[object Array]' : Array.isArray(value);
+}; // Adapted from:
+// https://github.com/lodash/lodash/blob/f4ca396a796435422bd4fd41fadbd225edddf175/.internal/baseToString.js
+
+
+var baseToString = function baseToString(value) {
+  // Exit early for strings to avoid a performance hit in some environments.
+  if (typeof value == 'string') {
+    return value;
+  }
+
+  var result = value + '';
+  return result == '0' && 1 / value == -INFINITY ? '-0' : result;
+};
+
+var toString = function toString(value) {
+  return value == null ? '' : baseToString(value);
+};
+
+var isString = function isString(value) {
+  return typeof value === 'string';
+};
+
+var isNumber = function isNumber(value) {
+  return typeof value === 'number';
+};
+
+var isDefined = function isDefined(value) {
+  return value !== undefined && value !== null;
+};
+
+var isBlank = function isBlank(value) {
+  return !value.trim().length;
+};
+
+function get(obj, path) {
+  var list = [];
+  var arr = false;
+
+  var _get = function _get(obj, path) {
+    if (!path) {
+      // If there's no path left, we've gotten to the object we care about.
+      list.push(obj);
+    } else {
+      var dotIndex = path.indexOf('.');
+      var key = path;
+      var remaining = null;
+
+      if (dotIndex !== -1) {
+        key = path.slice(0, dotIndex);
+        remaining = path.slice(dotIndex + 1);
+      }
+
+      var value = obj[key];
+
+      if (isDefined(value)) {
+        if (!remaining && (isString(value) || isNumber(value))) {
+          list.push(toString(value));
+        } else if (isArray(value)) {
+          arr = true; // Search each item in the array.
+
+          for (var i = 0, len = value.length; i < len; i += 1) {
+            _get(value[i], remaining);
+          }
+        } else if (remaining) {
+          // An object. Recurse further.
+          _get(value, remaining);
+        }
+      }
+    }
+  };
+
+  _get(obj, path);
+
+  if (arr) {
+    return list;
+  }
+
+  return list[0];
+}
+
+var MatchOptions = {
+  // Whether the matches should be included in the result set. When true, each record in the result
+  // set will include the indices of the matched characters.
+  // These can consequently be used for highlighting purposes.
+  includeMatches: false,
+  // When true, the matching function will continue to the end of a search pattern even if
+  // a perfect match has already been located in the string.
+  findAllMatches: false,
+  // Minimum number of characters that must be matched before a result is considered a match
+  minMatchCharLength: 1
+};
+var BasicOptions = {
+  // When true, the algorithm continues searching to the end of the input even if a perfect
+  // match is found before the end of the same input.
+  isCaseSensitive: false,
+  // When true, the matching function will continue to the end of a search pattern even if
+  includeScore: false,
+  // List of properties that will be searched. This also supports nested properties.
+  keys: [],
+  // Whether to sort the result list, by score
+  shouldSort: true,
+  // Default sort function: sort by ascending score, ascending index
+  sortFn: function sortFn(a, b) {
+    return a.score === b.score ? a.idx < b.idx ? -1 : 1 : a.score < b.score ? -1 : 1;
+  }
+};
+var FuzzyOptions = {
+  // Approximately where in the text is the pattern expected to be found?
+  location: 0,
+  // At what point does the match algorithm give up. A threshold of '0.0' requires a perfect match
+  // (of both letters and location), a threshold of '1.0' would match anything.
+  threshold: 0.6,
+  // Determines how close the match must be to the fuzzy location (specified above).
+  // An exact letter match which is 'distance' characters away from the fuzzy location
+  // would score as a complete mismatch. A distance of '0' requires the match be at
+  // the exact location specified, a threshold of '1000' would require a perfect match
+  // to be within 800 characters of the fuzzy location to be found using a 0.8 threshold.
+  distance: 100
+};
+var AdvancedOptions = {
+  // When true, it enables the use of unix-like search commands
+  useExtendedSearch: false,
+  // The get function to use when fetching an object's properties.
+  // The default will search nested paths *ie foo.bar.baz*
+  getFn: get
+};
+
+var Config = _objectSpread(_objectSpread(_objectSpread(_objectSpread({}, BasicOptions), MatchOptions), FuzzyOptions), AdvancedOptions);
+
+function computeScore(pattern) {
+  var _ref = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
+      _ref$errors = _ref.errors,
+      errors = _ref$errors === void 0 ? 0 : _ref$errors,
+      _ref$currentLocation = _ref.currentLocation,
+      currentLocation = _ref$currentLocation === void 0 ? 0 : _ref$currentLocation,
+      _ref$expectedLocation = _ref.expectedLocation,
+      expectedLocation = _ref$expectedLocation === void 0 ? 0 : _ref$expectedLocation,
+      _ref$distance = _ref.distance,
+      distance = _ref$distance === void 0 ? Config.distance : _ref$distance;
+
+  var accuracy = errors / pattern.length;
+  var proximity = Math.abs(expectedLocation - currentLocation);
+
+  if (!distance) {
+    // Dodge divide by zero error.
+    return proximity ? 1.0 : accuracy;
+  }
+
+  return accuracy + proximity / distance;
+}
+
+function convertMaskToIndices() {
+  var matchmask = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+  var minMatchCharLength = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : Config.minMatchCharLength;
+  var matchedIndices = [];
+  var start = -1;
+  var end = -1;
+  var i = 0;
+
+  for (var len = matchmask.length; i < len; i += 1) {
+    var match = matchmask[i];
+
+    if (match && start === -1) {
+      start = i;
+    } else if (!match && start !== -1) {
+      end = i - 1;
+
+      if (end - start + 1 >= minMatchCharLength) {
+        matchedIndices.push([start, end]);
+      }
+
+      start = -1;
+    }
+  } // (i-1 - start) + 1 => i - start
+
+
+  if (matchmask[i - 1] && i - start >= minMatchCharLength) {
+    matchedIndices.push([start, i - 1]);
+  }
+
+  return matchedIndices;
+} // Machine word size
+
+
+var MAX_BITS = 32;
+
+function search(text, pattern, patternAlphabet) {
+  var _ref2 = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {},
+      _ref2$location = _ref2.location,
+      location = _ref2$location === void 0 ? Config.location : _ref2$location,
+      _ref2$distance = _ref2.distance,
+      distance = _ref2$distance === void 0 ? Config.distance : _ref2$distance,
+      _ref2$threshold = _ref2.threshold,
+      threshold = _ref2$threshold === void 0 ? Config.threshold : _ref2$threshold,
+      _ref2$findAllMatches = _ref2.findAllMatches,
+      findAllMatches = _ref2$findAllMatches === void 0 ? Config.findAllMatches : _ref2$findAllMatches,
+      _ref2$minMatchCharLen = _ref2.minMatchCharLength,
+      minMatchCharLength = _ref2$minMatchCharLen === void 0 ? Config.minMatchCharLength : _ref2$minMatchCharLen,
+      _ref2$includeMatches = _ref2.includeMatches,
+      includeMatches = _ref2$includeMatches === void 0 ? Config.includeMatches : _ref2$includeMatches;
+
+  if (pattern.length > MAX_BITS) {
+    throw new Error("Pattern length exceeds max of ".concat(MAX_BITS, "."));
+  }
+
+  var patternLen = pattern.length; // Set starting location at beginning text and initialize the alphabet.
+
+  var textLen = text.length; // Handle the case when location > text.length
+
+  var expectedLocation = Math.max(0, Math.min(location, textLen)); // Highest score beyond which we give up.
+
+  var currentThreshold = threshold; // Is there a nearby exact match? (speedup)
+
+  var bestLocation = expectedLocation; // A mask of the matches, used for building the indices
+
+  var matchMask = [];
+
+  if (includeMatches) {
+    for (var i = 0; i < textLen; i += 1) {
+      matchMask[i] = 0;
+    }
+  }
+
+  var index; // Get all exact matches, here for speed up
+
+  while ((index = text.indexOf(pattern, bestLocation)) > -1) {
+    var score = computeScore(pattern, {
+      currentLocation: index,
+      expectedLocation: expectedLocation,
+      distance: distance
+    });
+    currentThreshold = Math.min(score, currentThreshold);
+    bestLocation = index + patternLen;
+
+    if (includeMatches) {
+      var _i = 0;
+
+      while (_i < patternLen) {
+        matchMask[index + _i] = 1;
+        _i += 1;
+      }
+    }
+  } // Reset the best location
+
+
+  bestLocation = -1;
+  var lastBitArr = [];
+  var finalScore = 1;
+  var binMax = patternLen + textLen;
+  var mask = 1 << (patternLen <= MAX_BITS - 1 ? patternLen - 1 : MAX_BITS - 2);
+
+  for (var _i2 = 0; _i2 < patternLen; _i2 += 1) {
+    // Scan for the best match; each iteration allows for one more error.
+    // Run a binary search to determine how far from the match location we can stray
+    // at this error level.
+    var binMin = 0;
+    var binMid = binMax;
+
+    while (binMin < binMid) {
+      var _score2 = computeScore(pattern, {
+        errors: _i2,
+        currentLocation: expectedLocation + binMid,
+        expectedLocation: expectedLocation,
+        distance: distance
+      });
+
+      if (_score2 <= currentThreshold) {
+        binMin = binMid;
+      } else {
+        binMax = binMid;
+      }
+
+      binMid = Math.floor((binMax - binMin) / 2 + binMin);
+    } // Use the result from this iteration as the maximum for the next.
+
+
+    binMax = binMid;
+    var start = Math.max(1, expectedLocation - binMid + 1);
+    var finish = findAllMatches ? textLen : Math.min(expectedLocation + binMid, textLen) + patternLen; // Initialize the bit array
+
+    var bitArr = Array(finish + 2);
+    bitArr[finish + 1] = (1 << _i2) - 1;
+
+    for (var j = finish; j >= start; j -= 1) {
+      var currentLocation = j - 1;
+      var charMatch = patternAlphabet[text.charAt(currentLocation)];
+
+      if (charMatch && includeMatches) {
+        matchMask[currentLocation] = 1;
+      } // First pass: exact match
+
+
+      bitArr[j] = (bitArr[j + 1] << 1 | 1) & charMatch; // Subsequent passes: fuzzy match
+
+      if (_i2 !== 0) {
+        bitArr[j] |= (lastBitArr[j + 1] | lastBitArr[j]) << 1 | 1 | lastBitArr[j + 1];
+      }
+
+      if (bitArr[j] & mask) {
+        finalScore = computeScore(pattern, {
+          errors: _i2,
+          currentLocation: currentLocation,
+          expectedLocation: expectedLocation,
+          distance: distance
+        }); // This match will almost certainly be better than any existing match.
+        // But check anyway.
+
+        if (finalScore <= currentThreshold) {
+          // Indeed it is
+          currentThreshold = finalScore;
+          bestLocation = currentLocation; // Already passed `loc`, downhill from here on in.
+
+          if (bestLocation <= expectedLocation) {
+            break;
+          } // When passing `bestLocation`, don't exceed our current distance from `expectedLocation`.
+
+
+          start = Math.max(1, 2 * expectedLocation - bestLocation);
+        }
+      }
+    } // No hope for a (better) match at greater error levels.
+
+
+    var _score = computeScore(pattern, {
+      errors: _i2 + 1,
+      currentLocation: expectedLocation,
+      expectedLocation: expectedLocation,
+      distance: distance
+    });
+
+    if (_score > currentThreshold) {
+      break;
+    }
+
+    lastBitArr = bitArr;
+  }
+
+  var result = {
+    isMatch: bestLocation >= 0,
+    // Count exact matches (those with a score of 0) to be "almost" exact
+    score: !finalScore ? 0.001 : finalScore
+  };
+
+  if (includeMatches) {
+    result.matchedIndices = convertMaskToIndices(matchMask, minMatchCharLength);
+  }
+
+  return result;
+}
+
+function createPatternAlphabet(pattern) {
+  var mask = {};
+  var len = pattern.length;
+
+  for (var i = 0; i < len; i += 1) {
+    mask[pattern.charAt(i)] = 0;
+  }
+
+  for (var _i3 = 0; _i3 < len; _i3 += 1) {
+    mask[pattern.charAt(_i3)] |= 1 << len - _i3 - 1;
+  }
+
+  return mask;
+}
+
+var BitapSearch = /*#__PURE__*/function () {
+  function BitapSearch(pattern) {
+    var _ref3 = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
+        _ref3$location = _ref3.location,
+        location = _ref3$location === void 0 ? Config.location : _ref3$location,
+        _ref3$threshold = _ref3.threshold,
+        threshold = _ref3$threshold === void 0 ? Config.threshold : _ref3$threshold,
+        _ref3$distance = _ref3.distance,
+        distance = _ref3$distance === void 0 ? Config.distance : _ref3$distance,
+        _ref3$includeMatches = _ref3.includeMatches,
+        includeMatches = _ref3$includeMatches === void 0 ? Config.includeMatches : _ref3$includeMatches,
+        _ref3$findAllMatches = _ref3.findAllMatches,
+        findAllMatches = _ref3$findAllMatches === void 0 ? Config.findAllMatches : _ref3$findAllMatches,
+        _ref3$minMatchCharLen = _ref3.minMatchCharLength,
+        minMatchCharLength = _ref3$minMatchCharLen === void 0 ? Config.minMatchCharLength : _ref3$minMatchCharLen,
+        _ref3$isCaseSensitive = _ref3.isCaseSensitive,
+        isCaseSensitive = _ref3$isCaseSensitive === void 0 ? Config.isCaseSensitive : _ref3$isCaseSensitive;
+
+    _classCallCheck(this, BitapSearch);
+
+    this.options = {
+      location: location,
+      threshold: threshold,
+      distance: distance,
+      includeMatches: includeMatches,
+      findAllMatches: findAllMatches,
+      minMatchCharLength: minMatchCharLength,
+      isCaseSensitive: isCaseSensitive
+    };
+    this.pattern = isCaseSensitive ? pattern : pattern.toLowerCase();
+    this.chunks = [];
+    var index = 0;
+
+    while (index < this.pattern.length) {
+      var _pattern = this.pattern.substring(index, index + MAX_BITS);
+
+      this.chunks.push({
+        pattern: _pattern,
+        alphabet: createPatternAlphabet(_pattern)
+      });
+      index += MAX_BITS;
+    }
+  }
+
+  _createClass(BitapSearch, [{
+    key: "searchIn",
+    value: function searchIn(value) {
+      var text = value.$;
+      return this.searchInString(text);
+    }
+  }, {
+    key: "searchInString",
+    value: function searchInString(text) {
+      var _this$options = this.options,
+          isCaseSensitive = _this$options.isCaseSensitive,
+          includeMatches = _this$options.includeMatches;
+
+      if (!isCaseSensitive) {
+        text = text.toLowerCase();
+      } // Exact match
+
+
+      if (this.pattern === text) {
+        var _result = {
+          isMatch: true,
+          score: 0
+        };
+
+        if (includeMatches) {
+          _result.matchedIndices = [[0, text.length - 1]];
+        }
+
+        return _result;
+      } // Otherwise, use Bitap algorithm
+
+
+      var _this$options2 = this.options,
+          location = _this$options2.location,
+          distance = _this$options2.distance,
+          threshold = _this$options2.threshold,
+          findAllMatches = _this$options2.findAllMatches,
+          minMatchCharLength = _this$options2.minMatchCharLength;
+      var allMatchedIndices = [];
+      var totalScore = 0;
+      var hasMatches = false;
+
+      for (var i = 0, len = this.chunks.length; i < len; i += 1) {
+        var _this$chunks$i = this.chunks[i],
+            pattern = _this$chunks$i.pattern,
+            alphabet = _this$chunks$i.alphabet;
+
+        var _result2 = search(text, pattern, alphabet, {
+          location: location + MAX_BITS * i,
+          distance: distance,
+          threshold: threshold,
+          findAllMatches: findAllMatches,
+          minMatchCharLength: minMatchCharLength,
+          includeMatches: includeMatches
+        });
+
+        var isMatch = _result2.isMatch,
+            score = _result2.score,
+            matchedIndices = _result2.matchedIndices;
+
+        if (isMatch) {
+          hasMatches = true;
+        }
+
+        totalScore += score;
+
+        if (isMatch && matchedIndices) {
+          allMatchedIndices = [].concat(_toConsumableArray(allMatchedIndices), _toConsumableArray(matchedIndices));
+        }
+      }
+
+      var result = {
+        isMatch: hasMatches,
+        score: hasMatches ? totalScore / this.chunks.length : 1
+      };
+
+      if (hasMatches && includeMatches) {
+        result.matchedIndices = allMatchedIndices;
+      }
+
+      return result;
+    }
+  }]);
+
+  return BitapSearch;
+}();
+
+var BaseMatch = /*#__PURE__*/function () {
+  function BaseMatch(pattern) {
+    _classCallCheck(this, BaseMatch);
+
+    this.pattern = pattern;
+  }
+
+  _createClass(BaseMatch, [{
+    key: "search",
+    value: function search()
+    /*text*/
+    {}
+  }], [{
+    key: "isMultiMatch",
+    value: function isMultiMatch(pattern) {
+      return getMatch(pattern, this.multiRegex);
+    }
+  }, {
+    key: "isSingleMatch",
+    value: function isSingleMatch(pattern) {
+      return getMatch(pattern, this.singleRegex);
+    }
+  }]);
+
+  return BaseMatch;
+}();
+
+function getMatch(pattern, exp) {
+  var matches = pattern.match(exp);
+  return matches ? matches[1] : null;
+} // Token: 'file
+
+
+var ExactMatch = /*#__PURE__*/function (_BaseMatch) {
+  _inherits(ExactMatch, _BaseMatch);
+
+  var _super = _createSuper(ExactMatch);
+
+  function ExactMatch(pattern) {
+    _classCallCheck(this, ExactMatch);
+
+    return _super.call(this, pattern);
+  }
+
+  _createClass(ExactMatch, [{
+    key: "search",
+    value: function search(text) {
+      var location = 0;
+      var index;
+      var matchedIndices = [];
+      var patternLen = this.pattern.length; // Get all exact matches
+
+      while ((index = text.indexOf(this.pattern, location)) > -1) {
+        location = index + patternLen;
+        matchedIndices.push([index, location - 1]);
+      }
+
+      var isMatch = !!matchedIndices.length;
+      return {
+        isMatch: isMatch,
+        score: isMatch ? 1 : 0,
+        matchedIndices: matchedIndices
+      };
+    }
+  }], [{
+    key: "type",
+    get: function get() {
+      return 'exact';
+    }
+  }, {
+    key: "multiRegex",
+    get: function get() {
+      return /^'"(.*)"$/;
+    }
+  }, {
+    key: "singleRegex",
+    get: function get() {
+      return /^'(.*)$/;
+    }
+  }]);
+
+  return ExactMatch;
+}(BaseMatch); // Token: !fire
+
+
+var InverseExactMatch = /*#__PURE__*/function (_BaseMatch2) {
+  _inherits(InverseExactMatch, _BaseMatch2);
+
+  var _super2 = _createSuper(InverseExactMatch);
+
+  function InverseExactMatch(pattern) {
+    _classCallCheck(this, InverseExactMatch);
+
+    return _super2.call(this, pattern);
+  }
+
+  _createClass(InverseExactMatch, [{
+    key: "search",
+    value: function search(text) {
+      var index = text.indexOf(this.pattern);
+      var isMatch = index === -1;
+      return {
+        isMatch: isMatch,
+        score: isMatch ? 0 : 1,
+        matchedIndices: [0, text.length - 1]
+      };
+    }
+  }], [{
+    key: "type",
+    get: function get() {
+      return 'inverse-exact';
+    }
+  }, {
+    key: "multiRegex",
+    get: function get() {
+      return /^!"(.*)"$/;
+    }
+  }, {
+    key: "singleRegex",
+    get: function get() {
+      return /^!(.*)$/;
+    }
+  }]);
+
+  return InverseExactMatch;
+}(BaseMatch); // Token: ^file
+
+
+var PrefixExactMatch = /*#__PURE__*/function (_BaseMatch3) {
+  _inherits(PrefixExactMatch, _BaseMatch3);
+
+  var _super3 = _createSuper(PrefixExactMatch);
+
+  function PrefixExactMatch(pattern) {
+    _classCallCheck(this, PrefixExactMatch);
+
+    return _super3.call(this, pattern);
+  }
+
+  _createClass(PrefixExactMatch, [{
+    key: "search",
+    value: function search(text) {
+      var isMatch = text.startsWith(this.pattern);
+      return {
+        isMatch: isMatch,
+        score: isMatch ? 0 : 1,
+        matchedIndices: [0, this.pattern.length - 1]
+      };
+    }
+  }], [{
+    key: "type",
+    get: function get() {
+      return 'prefix-exact';
+    }
+  }, {
+    key: "multiRegex",
+    get: function get() {
+      return /^\^"(.*)"$/;
+    }
+  }, {
+    key: "singleRegex",
+    get: function get() {
+      return /^\^(.*)$/;
+    }
+  }]);
+
+  return PrefixExactMatch;
+}(BaseMatch); // Token: !^fire
+
+
+var InversePrefixExactMatch = /*#__PURE__*/function (_BaseMatch4) {
+  _inherits(InversePrefixExactMatch, _BaseMatch4);
+
+  var _super4 = _createSuper(InversePrefixExactMatch);
+
+  function InversePrefixExactMatch(pattern) {
+    _classCallCheck(this, InversePrefixExactMatch);
+
+    return _super4.call(this, pattern);
+  }
+
+  _createClass(InversePrefixExactMatch, [{
+    key: "search",
+    value: function search(text) {
+      var isMatch = !text.startsWith(this.pattern);
+      return {
+        isMatch: isMatch,
+        score: isMatch ? 0 : 1,
+        matchedIndices: [0, text.length - 1]
+      };
+    }
+  }], [{
+    key: "type",
+    get: function get() {
+      return 'inverse-prefix-exact';
+    }
+  }, {
+    key: "multiRegex",
+    get: function get() {
+      return /^!\^"(.*)"$/;
+    }
+  }, {
+    key: "singleRegex",
+    get: function get() {
+      return /^!\^(.*)$/;
+    }
+  }]);
+
+  return InversePrefixExactMatch;
+}(BaseMatch); // Token: .file$
+
+
+var SuffixExactMatch = /*#__PURE__*/function (_BaseMatch5) {
+  _inherits(SuffixExactMatch, _BaseMatch5);
+
+  var _super5 = _createSuper(SuffixExactMatch);
+
+  function SuffixExactMatch(pattern) {
+    _classCallCheck(this, SuffixExactMatch);
+
+    return _super5.call(this, pattern);
+  }
+
+  _createClass(SuffixExactMatch, [{
+    key: "search",
+    value: function search(text) {
+      var isMatch = text.endsWith(this.pattern);
+      return {
+        isMatch: isMatch,
+        score: isMatch ? 0 : 1,
+        matchedIndices: [text.length - this.pattern.length, text.length - 1]
+      };
+    }
+  }], [{
+    key: "type",
+    get: function get() {
+      return 'suffix-exact';
+    }
+  }, {
+    key: "multiRegex",
+    get: function get() {
+      return /^"(.*)"\$$/;
+    }
+  }, {
+    key: "singleRegex",
+    get: function get() {
+      return /^(.*)\$$/;
+    }
+  }]);
+
+  return SuffixExactMatch;
+}(BaseMatch); // Token: !.file$
+
+
+var InverseSuffixExactMatch = /*#__PURE__*/function (_BaseMatch6) {
+  _inherits(InverseSuffixExactMatch, _BaseMatch6);
+
+  var _super6 = _createSuper(InverseSuffixExactMatch);
+
+  function InverseSuffixExactMatch(pattern) {
+    _classCallCheck(this, InverseSuffixExactMatch);
+
+    return _super6.call(this, pattern);
+  }
+
+  _createClass(InverseSuffixExactMatch, [{
+    key: "search",
+    value: function search(text) {
+      var isMatch = !text.endsWith(this.pattern);
+      return {
+        isMatch: isMatch,
+        score: isMatch ? 0 : 1,
+        matchedIndices: [0, text.length - 1]
+      };
+    }
+  }], [{
+    key: "type",
+    get: function get() {
+      return 'inverse-suffix-exact';
+    }
+  }, {
+    key: "multiRegex",
+    get: function get() {
+      return /^!"(.*)"\$$/;
+    }
+  }, {
+    key: "singleRegex",
+    get: function get() {
+      return /^!(.*)\$$/;
+    }
+  }]);
+
+  return InverseSuffixExactMatch;
+}(BaseMatch);
+
+var FuzzyMatch = /*#__PURE__*/function (_BaseMatch7) {
+  _inherits(FuzzyMatch, _BaseMatch7);
+
+  var _super7 = _createSuper(FuzzyMatch);
+
+  function FuzzyMatch(pattern) {
+    var _this;
+
+    var _ref4 = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
+        _ref4$location = _ref4.location,
+        location = _ref4$location === void 0 ? Config.location : _ref4$location,
+        _ref4$threshold = _ref4.threshold,
+        threshold = _ref4$threshold === void 0 ? Config.threshold : _ref4$threshold,
+        _ref4$distance = _ref4.distance,
+        distance = _ref4$distance === void 0 ? Config.distance : _ref4$distance,
+        _ref4$includeMatches = _ref4.includeMatches,
+        includeMatches = _ref4$includeMatches === void 0 ? Config.includeMatches : _ref4$includeMatches,
+        _ref4$findAllMatches = _ref4.findAllMatches,
+        findAllMatches = _ref4$findAllMatches === void 0 ? Config.findAllMatches : _ref4$findAllMatches,
+        _ref4$minMatchCharLen = _ref4.minMatchCharLength,
+        minMatchCharLength = _ref4$minMatchCharLen === void 0 ? Config.minMatchCharLength : _ref4$minMatchCharLen,
+        _ref4$isCaseSensitive = _ref4.isCaseSensitive,
+        isCaseSensitive = _ref4$isCaseSensitive === void 0 ? Config.isCaseSensitive : _ref4$isCaseSensitive;
+
+    _classCallCheck(this, FuzzyMatch);
+
+    _this = _super7.call(this, pattern);
+    _this._bitapSearch = new BitapSearch(pattern, {
+      location: location,
+      threshold: threshold,
+      distance: distance,
+      includeMatches: includeMatches,
+      findAllMatches: findAllMatches,
+      minMatchCharLength: minMatchCharLength,
+      isCaseSensitive: isCaseSensitive
+    });
+    return _this;
+  }
+
+  _createClass(FuzzyMatch, [{
+    key: "search",
+    value: function search(text) {
+      return this._bitapSearch.searchInString(text);
+    }
+  }], [{
+    key: "type",
+    get: function get() {
+      return 'fuzzy';
+    }
+  }, {
+    key: "multiRegex",
+    get: function get() {
+      return /^"(.*)"$/;
+    }
+  }, {
+    key: "singleRegex",
+    get: function get() {
+      return /^(.*)$/;
+    }
+  }]);
+
+  return FuzzyMatch;
+}(BaseMatch); // ❗Order is important. DO NOT CHANGE.
+
+
+var searchers = [ExactMatch, PrefixExactMatch, InversePrefixExactMatch, InverseSuffixExactMatch, SuffixExactMatch, InverseExactMatch, FuzzyMatch];
+var searchersLen = searchers.length; // Regex to split by spaces, but keep anything in quotes together
+
+var SPACE_RE = / +(?=([^\"]*\"[^\"]*\")*[^\"]*$)/;
+var OR_TOKEN = '|'; // Return a 2D array representation of the query, for simpler parsing.
+// Example:
+// "^core go$ | rb$ | py$ xy$" => [["^core", "go$"], ["rb$"], ["py$", "xy$"]]
+
+function parseQuery(pattern) {
+  var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+  return pattern.split(OR_TOKEN).map(function (item) {
+    var query = item.trim().split(SPACE_RE).filter(function (item) {
+      return item && !!item.trim();
+    });
+    var results = [];
+
+    for (var i = 0, len = query.length; i < len; i += 1) {
+      var queryItem = query[i]; // 1. Handle multiple query match (i.e, once that are quoted, like `"hello world"`)
+
+      var found = false;
+      var idx = -1;
+
+      while (!found && ++idx < searchersLen) {
+        var searcher = searchers[idx];
+        var token = searcher.isMultiMatch(queryItem);
+
+        if (token) {
+          results.push(new searcher(token, options));
+          found = true;
+        }
+      }
+
+      if (found) {
+        continue;
+      } // 2. Handle single query matches (i.e, once that are *not* quoted)
+
+
+      idx = -1;
+
+      while (++idx < searchersLen) {
+        var _searcher = searchers[idx];
+
+        var _token = _searcher.isSingleMatch(queryItem);
+
+        if (_token) {
+          results.push(new _searcher(_token, options));
+          break;
+        }
+      }
+    }
+
+    return results;
+  });
+} // These extended matchers can return an array of matches, as opposed
+// to a singl match
+
+
+var MultiMatchSet = new Set([FuzzyMatch.type, ExactMatch.type]);
+/**
+ * Command-like searching
+ * ======================
+ *
+ * Given multiple search terms delimited by spaces.e.g. `^jscript .python$ ruby !java`,
+ * search in a given text.
+ *
+ * Search syntax:
+ *
+ * | Token       | Match type                 | Description                            |
+ * | ----------- | -------------------------- | -------------------------------------- |
+ * | `jscript`   | fuzzy-match                | Items that match `jscript`             |
+ * | `'python`   | exact-match                | Items that include `python`            |
+ * | `!ruby`     | inverse-exact-match        | Items that do not include `ruby`       |
+ * | `^java`     | prefix-exact-match         | Items that start with `java`           |
+ * | `!^earlang` | inverse-prefix-exact-match | Items that do not start with `earlang` |
+ * | `.js$`      | suffix-exact-match         | Items that end with `.js`              |
+ * | `!.go$`     | inverse-suffix-exact-match | Items that do not end with `.go`       |
+ *
+ * A single pipe character acts as an OR operator. For example, the following
+ * query matches entries that start with `core` and end with either`go`, `rb`,
+ * or`py`.
+ *
+ * ```
+ * ^core go$ | rb$ | py$
+ * ```
+ */
+
+var ExtendedSearch = /*#__PURE__*/function () {
+  function ExtendedSearch(pattern) {
+    var _ref5 = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
+        _ref5$isCaseSensitive = _ref5.isCaseSensitive,
+        isCaseSensitive = _ref5$isCaseSensitive === void 0 ? Config.isCaseSensitive : _ref5$isCaseSensitive,
+        _ref5$includeMatches = _ref5.includeMatches,
+        includeMatches = _ref5$includeMatches === void 0 ? Config.includeMatches : _ref5$includeMatches,
+        _ref5$minMatchCharLen = _ref5.minMatchCharLength,
+        minMatchCharLength = _ref5$minMatchCharLen === void 0 ? Config.minMatchCharLength : _ref5$minMatchCharLen,
+        _ref5$findAllMatches = _ref5.findAllMatches,
+        findAllMatches = _ref5$findAllMatches === void 0 ? Config.findAllMatches : _ref5$findAllMatches,
+        _ref5$location = _ref5.location,
+        location = _ref5$location === void 0 ? Config.location : _ref5$location,
+        _ref5$threshold = _ref5.threshold,
+        threshold = _ref5$threshold === void 0 ? Config.threshold : _ref5$threshold,
+        _ref5$distance = _ref5.distance,
+        distance = _ref5$distance === void 0 ? Config.distance : _ref5$distance;
+
+    _classCallCheck(this, ExtendedSearch);
+
+    this.query = null;
+    this.options = {
+      isCaseSensitive: isCaseSensitive,
+      includeMatches: includeMatches,
+      minMatchCharLength: minMatchCharLength,
+      findAllMatches: findAllMatches,
+      location: location,
+      threshold: threshold,
+      distance: distance
+    };
+    this.pattern = isCaseSensitive ? pattern : pattern.toLowerCase();
+    this.query = parseQuery(this.pattern, this.options);
+  }
+
+  _createClass(ExtendedSearch, [{
+    key: "searchIn",
+    value: function searchIn(value) {
+      var query = this.query;
+
+      if (!query) {
+        return {
+          isMatch: false,
+          score: 1
+        };
+      }
+
+      var text = value.$;
+      var _this$options3 = this.options,
+          includeMatches = _this$options3.includeMatches,
+          isCaseSensitive = _this$options3.isCaseSensitive;
+      text = isCaseSensitive ? text : text.toLowerCase();
+      var numMatches = 0;
+      var indices = [];
+      var totalScore = 0; // ORs
+
+      for (var i = 0, qLen = query.length; i < qLen; i += 1) {
+        var _searchers = query[i]; // Reset indices
+
+        indices.length = 0;
+        numMatches = 0; // ANDs
+
+        for (var j = 0, pLen = _searchers.length; j < pLen; j += 1) {
+          var searcher = _searchers[j];
+
+          var _searcher$search = searcher.search(text),
+              isMatch = _searcher$search.isMatch,
+              matchedIndices = _searcher$search.matchedIndices,
+              score = _searcher$search.score;
+
+          if (isMatch) {
+            numMatches += 1;
+            totalScore += score;
+
+            if (includeMatches) {
+              var type = searcher.constructor.type;
+
+              if (MultiMatchSet.has(type)) {
+                indices = [].concat(_toConsumableArray(indices), _toConsumableArray(matchedIndices));
+              } else {
+                indices.push(matchedIndices);
+              }
+            }
+          } else {
+            totalScore = 0;
+            numMatches = 0;
+            indices.length = 0;
+            break;
+          }
+        } // OR condition, so if TRUE, return
+
+
+        if (numMatches) {
+          var result = {
+            isMatch: true,
+            score: totalScore / numMatches
+          };
+
+          if (includeMatches) {
+            result.matchedIndices = indices;
+          }
+
+          return result;
+        }
+      } // Nothing was matched
+
+
+      return {
+        isMatch: false,
+        score: 1
+      };
+    }
+  }], [{
+    key: "condition",
+    value: function condition(_, options) {
+      return options.useExtendedSearch;
+    }
+  }]);
+
+  return ExtendedSearch;
+}();
+
+var SPACE = /[^ ]+/g;
+
+function createIndex(keys, list) {
+  var _ref6 = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {},
+      _ref6$getFn = _ref6.getFn,
+      getFn = _ref6$getFn === void 0 ? Config.getFn : _ref6$getFn;
+
+  var indexedList = []; // List is Array<String>
+
+  if (isString(list[0])) {
+    // Iterate over every string in the list
+    for (var i = 0, len = list.length; i < len; i += 1) {
+      var value = list[i];
+
+      if (isDefined(value) && !isBlank(value)) {
+        var record = {
+          $: value,
+          idx: i,
+          t: value.match(SPACE).length
+        };
+        indexedList.push(record);
+      }
+    }
+  } else {
+    // List is Array<Object>
+    var keysLen = keys.length;
+
+    for (var _i4 = 0, _len = list.length; _i4 < _len; _i4 += 1) {
+      var item = list[_i4];
+      var _record = {
+        idx: _i4,
+        $: {}
+      }; // Iterate over every key (i.e, path), and fetch the value at that key
+
+      for (var j = 0; j < keysLen; j += 1) {
+        var key = keys[j];
+
+        var _value = getFn(item, key);
+
+        if (!isDefined(_value)) {
+          continue;
+        }
+
+        if (isArray(_value)) {
+          var subRecords = [];
+          var stack = [{
+            arrayIndex: -1,
+            value: _value
+          }];
+
+          while (stack.length) {
+            var _stack$pop = stack.pop(),
+                arrayIndex = _stack$pop.arrayIndex,
+                _value2 = _stack$pop.value;
+
+            if (!isDefined(_value2)) {
+              continue;
+            }
+
+            if (isString(_value2) && !isBlank(_value2)) {
+              var subRecord = {
+                $: _value2,
+                idx: arrayIndex,
+                t: _value2.match(SPACE).length
+              };
+              subRecords.push(subRecord);
+            } else if (isArray(_value2)) {
+              for (var k = 0, arrLen = _value2.length; k < arrLen; k += 1) {
+                stack.push({
+                  arrayIndex: k,
+                  value: _value2[k]
+                });
+              }
+            }
+          }
+
+          _record.$[key] = subRecords;
+        } else if (!isBlank(_value)) {
+          var _subRecord = {
+            $: _value,
+            t: _value.match(SPACE).length
+          };
+          _record.$[key] = _subRecord;
+        }
+      }
+
+      indexedList.push(_record);
+    }
+  }
+
+  return indexedList;
+}
+
+var KeyStore = /*#__PURE__*/function () {
+  function KeyStore(keys) {
+    _classCallCheck(this, KeyStore);
+
+    this._keys = {};
+    this._keyNames = [];
+    this._length = keys.length; // Iterate over every key
+
+    if (keys.length && isString(keys[0])) {
+      for (var i = 0; i < this._length; i += 1) {
+        var key = keys[i];
+        this._keys[key] = {
+          weight: 1
+        };
+
+        this._keyNames.push(key);
+      }
+    } else {
+      var totalWeight = 0;
+
+      for (var _i5 = 0; _i5 < this._length; _i5 += 1) {
+        var _key = keys[_i5];
+
+        if (!Object.prototype.hasOwnProperty.call(_key, 'name')) {
+          throw new Error('Missing "name" property in key object');
+        }
+
+        var keyName = _key.name;
+
+        this._keyNames.push(keyName);
+
+        if (!Object.prototype.hasOwnProperty.call(_key, 'weight')) {
+          throw new Error('Missing "weight" property in key object');
+        }
+
+        var weight = _key.weight;
+
+        if (weight <= 0 || weight >= 1) {
+          throw new Error('"weight" property in key must be in the range of (0, 1)');
+        }
+
+        this._keys[keyName] = {
+          weight: weight
+        };
+        totalWeight += weight;
+      } // Normalize weights so that their sum is equal to 1
+
+
+      for (var _i6 = 0; _i6 < this._length; _i6 += 1) {
+        var _keyName = this._keyNames[_i6];
+        var keyWeight = this._keys[_keyName].weight;
+        this._keys[_keyName].weight = keyWeight / totalWeight;
+      }
+    }
+  }
+
+  _createClass(KeyStore, [{
+    key: "get",
+    value: function get(key, name) {
+      return this._keys[key] ? this._keys[key][name] : -1;
+    }
+  }, {
+    key: "keys",
+    value: function keys() {
+      return this._keyNames;
+    }
+  }, {
+    key: "count",
+    value: function count() {
+      return this._length;
+    }
+  }, {
+    key: "toJSON",
+    value: function toJSON() {
+      return JSON.stringify(this._keys);
+    }
+  }]);
+
+  return KeyStore;
+}();
+
+function transformMatches(result, data) {
+  var matches = result.matches;
+  data.matches = [];
+
+  if (!isDefined(matches)) {
+    return;
+  }
+
+  for (var i = 0, len = matches.length; i < len; i += 1) {
+    var match = matches[i];
+
+    if (!isDefined(match.indices) || match.indices.length === 0) {
+      continue;
+    }
+
+    var obj = {
+      indices: match.indices,
+      value: match.value
+    };
+
+    if (match.key) {
+      obj.key = match.key;
+    }
+
+    if (match.idx > -1) {
+      obj.refIndex = match.idx;
+    }
+
+    data.matches.push(obj);
+  }
+}
+
+function transformScore(result, data) {
+  data.score = result.score;
+}
+
+var registeredSearchers = [];
+
+function register() {
+  registeredSearchers.push.apply(registeredSearchers, arguments);
+}
+
+var Fuse = /*#__PURE__*/function () {
+  function Fuse(list) {
+    var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    var index = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
+
+    _classCallCheck(this, Fuse);
+
+    this.options = _objectSpread(_objectSpread({}, Config), options);
+
+    this._processKeys(this.options.keys);
+
+    this.setCollection(list, index);
+  }
+
+  _createClass(Fuse, [{
+    key: "setCollection",
+    value: function setCollection(list) {
+      var index = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
+      this.list = list;
+      this.listIsStringArray = isString(list[0]);
+
+      if (index) {
+        this.setIndex(index);
+      } else {
+        this.setIndex(this._createIndex());
+      }
+    }
+  }, {
+    key: "setIndex",
+    value: function setIndex(listIndex) {
+      this._indexedList = listIndex;
+    }
+  }, {
+    key: "_processKeys",
+    value: function _processKeys(keys) {
+      this._keyStore = new KeyStore(keys);
+    }
+  }, {
+    key: "_createIndex",
+    value: function _createIndex() {
+      return createIndex(this._keyStore.keys(), this.list, {
+        getFn: this.options.getFn
+      });
+    }
+  }, {
+    key: "search",
+    value: function search(pattern) {
+      var opts = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {
+        limit: false
+      };
+      pattern = pattern.trim();
+
+      if (!pattern.length) {
+        return [];
+      }
+
+      var shouldSort = this.options.shouldSort;
+      var searcher = null;
+
+      for (var i = 0, len = registeredSearchers.length; i < len; i += 1) {
+        var searcherClass = registeredSearchers[i];
+
+        if (searcherClass.condition(pattern, this.options)) {
+          searcher = new searcherClass(pattern, this.options);
+          break;
+        }
+      }
+
+      if (!searcher) {
+        searcher = new BitapSearch(pattern, this.options);
+      }
+
+      var results = this._searchUsing(searcher);
+
+      this._computeScore(results);
+
+      if (shouldSort) {
+        this._sort(results);
+      }
+
+      if (opts.limit && isNumber(opts.limit)) {
+        results = results.slice(0, opts.limit);
+      }
+
+      return this._format(results);
+    }
+  }, {
+    key: "_searchUsing",
+    value: function _searchUsing(searcher) {
+      var list = this._indexedList;
+      var results = [];
+      var includeMatches = this.options.includeMatches; // List is Array<String>
+
+      if (this.listIsStringArray) {
+        // Iterate over every string in the list
+        for (var i = 0, len = list.length; i < len; i += 1) {
+          var value = list[i];
+          var text = value.$,
+              idx = value.idx,
+              t = value.t;
+
+          if (!isDefined(text)) {
+            continue;
+          }
+
+          var searchResult = searcher.searchIn(value);
+          var isMatch = searchResult.isMatch,
+              score = searchResult.score;
+
+          if (!isMatch) {
+            continue;
+          }
+
+          var match = {
+            score: score,
+            value: text,
+            t: t
+          };
+
+          if (includeMatches) {
+            match.indices = searchResult.matchedIndices;
+          }
+
+          results.push({
+            item: text,
+            idx: idx,
+            matches: [match]
+          });
+        }
+      } else {
+        // List is Array<Object>
+        var keyNames = this._keyStore.keys();
+
+        var keysLen = this._keyStore.count();
+
+        for (var _i7 = 0, _len2 = list.length; _i7 < _len2; _i7 += 1) {
+          var _list$_i = list[_i7],
+              item = _list$_i.$,
+              _idx = _list$_i.idx;
+
+          if (!isDefined(item)) {
+            continue;
+          }
+
+          var matches = []; // Iterate over every key (i.e, path), and fetch the value at that key
+
+          for (var j = 0; j < keysLen; j += 1) {
+            var key = keyNames[j];
+            var _value3 = item[key];
+
+            if (!isDefined(_value3)) {
+              continue;
+            }
+
+            if (isArray(_value3)) {
+              for (var k = 0, _len3 = _value3.length; k < _len3; k += 1) {
+                var arrItem = _value3[k];
+                var _text = arrItem.$,
+                    _idx2 = arrItem.idx,
+                    _t = arrItem.t;
+
+                if (!isDefined(_text)) {
+                  continue;
+                }
+
+                var _searchResult = searcher.searchIn(arrItem);
+
+                var _isMatch = _searchResult.isMatch,
+                    _score3 = _searchResult.score;
+
+                if (!_isMatch) {
+                  continue;
+                }
+
+                var _match = {
+                  score: _score3,
+                  key: key,
+                  value: _text,
+                  idx: _idx2,
+                  t: _t
+                };
+
+                if (includeMatches) {
+                  _match.indices = _searchResult.matchedIndices;
+                }
+
+                matches.push(_match);
+              }
+            } else {
+              var _text2 = _value3.$,
+                  _t2 = _value3.t;
+
+              var _searchResult2 = searcher.searchIn(_value3);
+
+              var _isMatch2 = _searchResult2.isMatch,
+                  _score4 = _searchResult2.score;
+
+              if (!_isMatch2) {
+                continue;
+              }
+
+              var _match2 = {
+                score: _score4,
+                key: key,
+                value: _text2,
+                t: _t2
+              };
+
+              if (includeMatches) {
+                _match2.indices = _searchResult2.matchedIndices;
+              }
+
+              matches.push(_match2);
+            }
+          }
+
+          if (matches.length) {
+            results.push({
+              idx: _idx,
+              item: item,
+              matches: matches
+            });
+          }
+        }
+      }
+
+      return results;
+    } // Practical scoring function
+
+  }, {
+    key: "_computeScore",
+    value: function _computeScore(results) {
+      var resultsLen = results.length;
+
+      for (var i = 0; i < resultsLen; i += 1) {
+        var result = results[i];
+        var matches = result.matches;
+        var numMatches = matches.length;
+        var totalScore = 1;
+
+        for (var j = 0; j < numMatches; j += 1) {
+          var match = matches[j];
+          var key = match.key,
+              t = match.t;
+
+          var keyWeight = this._keyStore.get(key, 'weight');
+
+          var weight = keyWeight > -1 ? keyWeight : 1;
+          var score = match.score === 0 && keyWeight > -1 ? Number.EPSILON : match.score; // Field-length norm: the shorter the field, the higher the weight.
+
+          var norm = 1 / Math.sqrt(t);
+          totalScore *= Math.pow(score, weight * norm);
+        }
+
+        result.score = totalScore;
+      }
+    }
+  }, {
+    key: "_sort",
+    value: function _sort(results) {
+      results.sort(this.options.sortFn);
+    }
+  }, {
+    key: "_format",
+    value: function _format(results) {
+      var finalOutput = [];
+      var _this$options4 = this.options,
+          includeMatches = _this$options4.includeMatches,
+          includeScore = _this$options4.includeScore;
+      var transformers = [];
+      if (includeMatches) transformers.push(transformMatches);
+      if (includeScore) transformers.push(transformScore);
+
+      for (var i = 0, len = results.length; i < len; i += 1) {
+        var result = results[i];
+        var idx = result.idx;
+        var data = {
+          item: this.list[idx],
+          refIndex: idx
+        };
+
+        if (transformers.length) {
+          for (var j = 0, _len4 = transformers.length; j < _len4; j += 1) {
+            transformers[j](result, data);
+          }
+        }
+
+        finalOutput.push(data);
+      }
+
+      return finalOutput;
+    }
+  }]);
+
+  return Fuse;
+}();
+
+register(ExtendedSearch);
+Fuse.version = '5.2.3';
+Fuse.createIndex = createIndex;
+Fuse.config = Config;
+var _default = Fuse;
+exports.default = _default;
+},{}],"src/containers/profiles.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -38984,6 +41019,8 @@ exports.default = BrowseContainer;
 
 var _react = _interopRequireWildcard(require("react"));
 
+var _fuse = _interopRequireDefault(require("fuse.js"));
+
 var _components = require("../components");
 
 var ROUTES = _interopRequireWildcard(require("../constants/routes"));
@@ -39012,7 +41049,9 @@ function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
-function BrowseContainer() {
+function BrowseContainer(_ref) {
+  var slides = _ref.slides;
+
   var _useState = (0, _react.useState)({}),
       _useState2 = _slicedToArray(_useState, 2),
       profile = _useState2[0],
@@ -39050,6 +41089,21 @@ function BrowseContainer() {
   (0, _react.useEffect)(function () {
     setSlideRows(slides[category]);
   }, [slides, category]);
+  (0, _react.useEffect)(function () {
+    var fuse = new _fuse.default(slideRows, {
+      keys: ['data.description', 'data.title', 'data.genre']
+    });
+    var results = fuse.search(searchTerm).map(function (_ref2) {
+      var item = _ref2.item;
+      return item;
+    });
+
+    if (slideRows.length > 0 && searchTerm.length > 3 && results.length > 0) {
+      setSlideRows(results);
+    } else {
+      setSlideRows(slides[category]);
+    }
+  }, [searchTerm]);
   return profile.displayName ? /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, loading ? /*#__PURE__*/_react.default.createElement(_components.Loading, {
     src: user.photoURL
   }) : /*#__PURE__*/_react.default.createElement(_components.Loading.ReleaseBody, null), /*#__PURE__*/_react.default.createElement(_components.Header, {
@@ -39082,21 +41136,23 @@ function BrowseContainer() {
     }
   }, user.displayName)), /*#__PURE__*/_react.default.createElement(_components.Header.Group, null, /*#__PURE__*/_react.default.createElement(_components.Header.Link, null, "Sign out"))))))), /*#__PURE__*/_react.default.createElement(_components.Header.Feature, null, /*#__PURE__*/_react.default.createElement(_components.Header.FeatureCallOut, null, "Watch Joker Now"), /*#__PURE__*/_react.default.createElement(_components.Header.Text, null, "Forever alone in a crowd, failed comedian Arthur Fleck seeks connection as he walks the streets of Gotham job as a clown, and the guise he projects in a futile attempt to feel like he's part of the world around him."), /*#__PURE__*/_react.default.createElement(_components.Header.PlayButton, null, "Play"))), /*#__PURE__*/_react.default.createElement(_components.Card.Group, null, slideRows.map(function (slideItem) {
     return /*#__PURE__*/_react.default.createElement(_components.Card, {
-      key: "".concat(category, "-").concat(slideItem.title.toLowercase())
-    }, /*#__PURE__*/_react.default.createElement(_components.Card.Title, null, slideItem), /*#__PURE__*/_react.default.createElement(_components.Card.Entities, null, slideItem.data.map(function (item) {
+      key: "".concat(category, "-").concat(slideItem.title.toLowerCase())
+    }, /*#__PURE__*/_react.default.createElement(_components.Card.Title, null, slideItem.title), /*#__PURE__*/_react.default.createElement(_components.Card.Entities, null, slideItem.data.map(function (item) {
       return /*#__PURE__*/_react.default.createElement(_components.Card.Item, {
         key: item.docId,
-        item: itme
+        item: item
       }, /*#__PURE__*/_react.default.createElement(_components.Card.Image, {
         src: "/images/".concat(category, "/").concat(item.genre, "/").concat(item.slug, "/small.jpg")
       }), /*#__PURE__*/_react.default.createElement(_components.Card.Meta, null, /*#__PURE__*/_react.default.createElement(_components.Card.SubTitle, null, item.title), /*#__PURE__*/_react.default.createElement(_components.Card.Text, null, item.description)));
-    })));
+    })), /*#__PURE__*/_react.default.createElement(_components.Card.Feature, {
+      category: category
+    }, /*#__PURE__*/_react.default.createElement(_components.Player, null, /*#__PURE__*/_react.default.createElement(_components.Player.Button, null), /*#__PURE__*/_react.default.createElement(_components.Player.Video, null))));
   })), /*#__PURE__*/_react.default.createElement(_footer.default, null)) : /*#__PURE__*/_react.default.createElement(_profiles.SelectProfileContainer, {
     user: user,
     setProfile: setProfile
   });
 }
-},{"react":"node_modules/react/index.js","../components":"src/components/index.js","../constants/routes":"src/constants/routes.js","../context/firebase":"src/context/firebase.js","./footer":"src/containers/footer.js","./profiles":"src/containers/profiles.js"}],"src/utils/selection-map.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","fuse.js":"node_modules/fuse.js/dist/fuse.esm.js","../components":"src/components/index.js","../constants/routes":"src/constants/routes.js","../context/firebase":"src/context/firebase.js","./footer":"src/containers/footer.js","./profiles":"src/containers/profiles.js"}],"src/utils/selection-map.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -39231,6 +41287,57 @@ function useContent(target) {
   }, []);
   return _defineProperty({}, target, content);
 }
+},{"react":"node_modules/react/index.js","../context/firebase":"src/context/firebase.js"}],"src/hooks/use-auth-listener.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = useAuthListener;
+
+var _react = require("react");
+
+var _firebase = require("../context/firebase");
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+function useAuthListener() {
+  var _useState = (0, _react.useState)(JSON.parse(localStorage.getItem('authUser'))),
+      _useState2 = _slicedToArray(_useState, 2),
+      user = _useState2[0],
+      setUser = _useState2[1];
+
+  var _useContext = (0, _react.useContext)(_firebase.FirebaseContext),
+      firebase = _useContext.firebase;
+
+  (0, _react.useEffect)(function () {
+    var listener = firebase.auth().onAuthStateChanged(function (authUser) {
+      if (authUser) {
+        localStorage.setItem('authUser', JSON.stringify(authUser));
+        setUser(authUser);
+      } else {
+        localStorage.removeItem("authUser");
+        setUser(null);
+      }
+    });
+    return function () {
+      return listener();
+    };
+  }, []);
+  return {
+    user: user
+  };
+}
 },{"react":"node_modules/react/index.js","../context/firebase":"src/context/firebase.js"}],"src/hooks/index.js":[function(require,module,exports) {
 "use strict";
 
@@ -39243,11 +41350,19 @@ Object.defineProperty(exports, "useContent", {
     return _useContent.default;
   }
 });
+Object.defineProperty(exports, "useAuthListener", {
+  enumerable: true,
+  get: function () {
+    return _useAuthListener.default;
+  }
+});
 
 var _useContent = _interopRequireDefault(require("./use-content"));
 
+var _useAuthListener = _interopRequireDefault(require("./use-auth-listener"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./use-content":"src/hooks/use-content.js"}],"src/pages/browse.js":[function(require,module,exports) {
+},{"./use-content":"src/hooks/use-content.js","./use-auth-listener":"src/hooks/use-auth-listener.js"}],"src/pages/browse.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -39272,12 +41387,12 @@ function Browse() {
   var _useContent2 = (0, _hooks.useContent)('films'),
       films = _useContent2.films;
 
-  var sildes = (0, _utils.selectionMap)({
+  var slides = (0, _utils.selectionMap)({
     series: series,
     films: films
   });
   return /*#__PURE__*/_react.default.createElement(_browse.default, {
-    sildes: sildes
+    slides: slides
   });
 }
 },{"react":"node_modules/react/index.js","../containers/browse":"src/containers/browse.js","../utils":"src/utils/index.js","../hooks":"src/hooks/index.js"}],"src/pages/index.js":[function(require,module,exports) {
@@ -39320,7 +41435,81 @@ var _signup = _interopRequireDefault(require("./signup"));
 var _browse = _interopRequireDefault(require("./browse"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./Home":"src/pages/Home.js","./signin":"src/pages/signin.js","./signup":"src/pages/signup.js","./browse":"src/pages/browse.js"}],"src/app.js":[function(require,module,exports) {
+},{"./Home":"src/pages/Home.js","./signin":"src/pages/signin.js","./signup":"src/pages/signup.js","./browse":"src/pages/browse.js"}],"src/helpers/routes.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.IsUserRedirect = IsUserRedirect;
+exports.ProtectedRoute = ProtectedRoute;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _reactRouterDom = require("react-router-dom");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+function IsUserRedirect(_ref) {
+  var user = _ref.user,
+      loggedInPath = _ref.loggedInPath,
+      children = _ref.children,
+      restProps = _objectWithoutProperties(_ref, ["user", "loggedInPath", "children"]);
+
+  return /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, _extends({}, restProps, {
+    render: function render() {
+      if (!user) {
+        return children;
+      }
+
+      if (user) {
+        return /*#__PURE__*/_react.default.createElement(_reactRouterDom.Redirect, {
+          to: {
+            pathname: loggedInPath
+          }
+        });
+      }
+
+      return null;
+    }
+  }));
+}
+
+function ProtectedRoute(_ref2) {
+  var user = _ref2.user,
+      children = _ref2.children,
+      restProps = _objectWithoutProperties(_ref2, ["user", "children"]);
+
+  return /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, _extends({}, restProps, {
+    render: function render(_ref3) {
+      var location = _ref3.location;
+
+      if (user) {
+        return children;
+      }
+
+      if (!user) {
+        return /*#__PURE__*/_react.default.createElement(_reactRouterDom.Redirect, {
+          to: {
+            pathname: 'signin',
+            state: {
+              from: location
+            }
+          }
+        });
+      }
+
+      return null;
+    }
+  }));
+}
+},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js"}],"src/app.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -39336,6 +41525,10 @@ var ROUTES = _interopRequireWildcard(require("./constants/routes"));
 
 var _pages = require("./pages");
 
+var _hooks = require("./hooks");
+
+var _routes2 = require("./helpers/routes");
+
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
@@ -39343,21 +41536,31 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
-  return /*#__PURE__*/_react.default.createElement(_reactRouterDom.BrowserRouter, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Switch, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+  var _useAuthListener = (0, _hooks.useAuthListener)(),
+      user = _useAuthListener.user;
+
+  return /*#__PURE__*/_react.default.createElement(_reactRouterDom.BrowserRouter, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Switch, null, /*#__PURE__*/_react.default.createElement(_routes2.IsUserRedirect, {
+    user: user,
+    loggedInPath: ROUTES.BROWSE,
     path: ROUTES.HOME,
     exact: true
-  }, /*#__PURE__*/_react.default.createElement(_pages.Home, null)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+  }, /*#__PURE__*/_react.default.createElement(_pages.Home, null)), /*#__PURE__*/_react.default.createElement(_routes2.IsUserRedirect, {
     exact: true,
+    user: user,
+    loggedInPath: ROUTES.BROWSE,
     path: ROUTES.SIGN_IN
-  }, /*#__PURE__*/_react.default.createElement(_pages.Signin, null)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+  }, /*#__PURE__*/_react.default.createElement(_pages.Signin, null)), /*#__PURE__*/_react.default.createElement(_routes2.IsUserRedirect, {
     exact: true,
+    user: user,
+    loggedInPath: ROUTES.BROWSE,
     path: ROUTES.SIGN_UP
-  }, /*#__PURE__*/_react.default.createElement(_pages.SignUp, null)), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
+  }, /*#__PURE__*/_react.default.createElement(_pages.SignUp, null)), /*#__PURE__*/_react.default.createElement(_routes2.ProtectedRoute, {
     exact: true,
+    user: user,
     path: ROUTES.BROWSE
   }, /*#__PURE__*/_react.default.createElement(_pages.Browse, null))));
 }
-},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","./constants/routes":"src/constants/routes.js","./pages":"src/pages/index.js"}],"src/global-styles.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","./constants/routes":"src/constants/routes.js","./pages":"src/pages/index.js","./hooks":"src/hooks/index.js","./helpers/routes":"src/helpers/routes.js"}],"src/global-styles.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -39441,7 +41644,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61009" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49879" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

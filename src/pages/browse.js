@@ -9,9 +9,9 @@ export default function Browse() {
   const { series } = useContent('series')
   const { films } = useContent('films')
   
-  const sildes = selectionMap({ series,films })
+  const slides = selectionMap({ series,films })
   
   return (
-    <BrowseContainer sildes={sildes}/>
+    <BrowseContainer slides={slides}/>
   )
 }

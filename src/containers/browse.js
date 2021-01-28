@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from 'react'
-import { Header, Loading, Card} from '../components'
+import React,{ useState,useEffect } from 'react'
+import Fuse from "fuse.js";
+import { Header, Loading, Card, Player} from '../components'
 import * as ROUTES from '../constants/routes'
 import { FirebaseContext } from '../context/firebase'
 import FooterContanier from './footer'
 import { SelectProfileContainer } from './profiles'
 
-export default function BrowseContainer() {
+export default function BrowseContainer({ slides }) {
   
   const [ profile, setProfile ] = useState({})
   const [ loading,setLoading ] = useState(true)
@@ -25,8 +26,20 @@ export default function BrowseContainer() {
   },[ user ])
   
   useEffect(() => {
-    setSlideRows(slides[category])
-  }, [slides, category])
+    setSlideRows(slides[category]);
+  },[ slides,category ]);
+  
+    useEffect(() => {
+    const fuse = new Fuse(slideRows, { keys: ['data.description', 'data.title', 'data.genre'] });
+    const results = fuse.search(searchTerm).map(({ item }) => item);
+
+    if (slideRows.length > 0 && searchTerm.length > 3 && results.length > 0) {
+      setSlideRows(results);
+    } else {
+      setSlideRows(slides[category]);
+    }
+  }, [searchTerm]);
+
   
   return profile.displayName ? (
     <React.Fragment>
@@ -72,11 +85,11 @@ export default function BrowseContainer() {
       
       <Card.Group>
         { slideRows.map(slideItem => (
-          <Card key={`${category}-${slideItem.title.toLowercase()}`} >
-            <Card.Title >{slideItem}</Card.Title>
+          <Card key={`${category}-${slideItem.title.toLowerCase()}`}>
+            <Card.Title >{slideItem.title}</Card.Title>
             <Card.Entities >
               { slideItem.data.map(item => (
-                <Card.Item key={ item.docId } item={ itme }>
+                <Card.Item key={ item.docId } item={ item }>
                   <Card.Image src={`/images/${category}/${item.genre}/${item.slug}/small.jpg`} />
                   <Card.Meta>
                     <Card.SubTitle >{item.title}</Card.SubTitle>
@@ -85,6 +98,12 @@ export default function BrowseContainer() {
                 </Card.Item> 
               ))}
             </Card.Entities>
+            <Card.Feature category={ category }>
+              <Player>
+                <Player.Button />
+                <Player.Video />
+              </Player>
+            </Card.Feature>
           </Card>
         ))}
       </Card.Group>
